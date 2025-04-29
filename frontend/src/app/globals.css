@@ -40,3 +40,17 @@ a {
     color-scheme: dark;
   }
 }
+
+.homepage {
+  background-image: url('/sunset.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
