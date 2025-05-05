@@ -41,11 +41,23 @@ export default function About() {
         />
         <h3>Glenn Siaumau</h3>
         <h4>Loan Officer</h4>
-        <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
         <h5>DRE License#: 01415271</h5>
         <h5>NMLS#: 2278633</h5>
+      </div>
+
+      <div>
+        <h3>Commitment to Excellence</h3>
+        <p>
+          We believe in more than just facilitating a transaction; we’re
+          committed to being your lifelong partner in home financing. By
+          providing excellent service and solutions, we strive to become the
+          go-to lender for you, your family and friends. We offer comprehensive
+          support through every stage of your home journey. Whether buying your
+          first home, refinancing your current mortgage, selling and purchasing
+          a new property, or investing in real estate, we’re here to guide and
+          support you through every step.
+        </p>
       </div>
     </>
   );
