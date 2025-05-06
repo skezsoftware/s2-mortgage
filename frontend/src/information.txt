@@ -1,0 +1,6 @@
+Highlight Palette
+
+#1c2541 -Dark Blue
+#4b8cff - Light Blue
+#f1f1e6 - Light Gray
+#fff7d6 - Light Tan
