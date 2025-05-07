@@ -1,12 +1,15 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #1c2541;
+  --accent: #4b8cff;
+  --background: #f1f1e6;
+  --highlight: #fff7d6;
+  --text: #1c2541;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f1f1e6;
+    /* --foreground: #ededed; */
   }
 }
 
@@ -17,9 +20,11 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,22 +46,57 @@ a {
   }
 }
 
-.homepage {
-  background-image: url('/sunset.png');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+li:hover::after {
+  content: attr(data-description);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: var(--accent);
+  color: var(--highlight);
+  padding: 1rem;
+  border-radius: 4px;
+  width: 300px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1024px) {
   .homepage {
     background-image: url('/phone_home_sunset.png')
   }
-  
 }
