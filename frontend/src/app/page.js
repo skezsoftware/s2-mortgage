@@ -7,20 +7,22 @@ export default function Home() {
   return (
     <>
       <div className={styles.homepage}>
-        <button>
-          <a href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe">
-            Get Started Now
-          </a>
-        </button>
+        <div className={styles.homepageContent}>
+          <p>
+            At S2 Mortgage, we take pride in delivering exceptional service and
+            are confident that we have the perfect solution to your unique home
+            loan needs.
+          </p>
+          <button className={styles.heroButton}>
+            <a
+              href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Get Started Now
+            </a>
+          </button>
+        </div>
       </div>
-
-      <section className={styles.section}>
-        <h2>
-          At S2 Mortgage, we take pride in delivering exceptional service and
-          are confident that we have the perfect solution to you unique home
-          loan needs.
-        </h2>
-      </section>
 
       <section className={styles.section}>
         <h2>Comprehensive Mortgage Consultation Services</h2>
@@ -63,37 +65,39 @@ export default function Home() {
 
       <section className={styles.section}>
         <h2>Why Choose Us</h2>
-        <div>
-          <h3>Commitment to Excellence</h3>
-          <p>
-            We prioritize your needs and focus on providing a seamless and
-            stress-free mortgage experience. Our ethical approach ensures you
-            receive honest advice and transparent service.
-          </p>
-        </div>
-        <div>
-          <h3>Local Expertise</h3>
-          <p>
-            Serving San Diego, Los Angeles, and surrounding areas, we understand
-            the local market and are well-equipped to assist you with your
-            mortgage needs in California.
-          </p>
-        </div>
-        <div>
-          <h3>Client-Centric Approach</h3>
-          <p>
-            Our commitment to exceptional service means we put your best
-            interests first. We&apos;re here to guide you through every step and
-            ensure you feel confident and informed.
-          </p>
-        </div>
-        <div>
-          <h3>Reliable Support</h3>
-          <p>
-            Whether you are a First Time Homebuyer or a seasoned real estate
-            investor, our dedicated team is ready to provide reliable support
-            and answer your questions.
-          </p>
+        <div className={styles.cards}>
+          <div className={styles.card}>
+            <h3>Commitment to Excellence</h3>
+            <p>
+              We prioritize your needs and focus on providing a seamless and
+              stress-free mortgage experience. Our ethical approach ensures you
+              receive honest advice and transparent service.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <h3>Local Expertise</h3>
+            <p>
+              Serving San Diego, Los Angeles, and surrounding areas, we
+              understand the local market and are well-equipped to assist you
+              with your mortgage needs in California.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <h3>Client-Centric Approach</h3>
+            <p>
+              Our commitment to exceptional service means we put your best
+              interests first. We&apos;re here to guide you through every step
+              and ensure you feel confident and informed.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <h3>Reliable Support</h3>
+            <p>
+              Whether you are a First Time Homebuyer or a seasoned real estate
+              investor, our dedicated team is ready to provide reliable support
+              and answer your questions.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -104,7 +108,7 @@ export default function Home() {
           home financing goals. Discover our full range of services and find the
           one that aligns with your needs.
         </p>
-        <button>Explore Our Services</button>
+        <button className={styles.heroButton}>Explore Our Services</button>
       </section>
     </>
   );
