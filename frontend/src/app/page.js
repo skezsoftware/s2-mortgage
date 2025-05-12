@@ -8,11 +8,6 @@ export default function Home() {
     <>
       <div className={styles.homepage}>
         <div className={styles.homepageContent}>
-          <p>
-            At S2 Mortgage, we take pride in delivering exceptional service and
-            are confident that we have the perfect solution to your unique home
-            loan needs.
-          </p>
           <button className={styles.heroButton}>
             <a
               href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
@@ -21,6 +16,11 @@ export default function Home() {
               Get Started Now
             </a>
           </button>
+          <p>
+            At S2 Mortgage, we take pride in delivering exceptional service and
+            are confident that we have the perfect solution to your unique home
+            loan needs.
+          </p>
         </div>
       </div>
 

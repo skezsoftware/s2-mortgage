@@ -16,7 +16,7 @@
   padding: 0;
   text-align: center;
   max-width: 700px;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 
 .homepageContent p {
@@ -25,6 +25,7 @@
   font-style: italic;
   color: #fff;
   text-shadow: 0 2px 8px rgba(28,37,65,0.45);
+  margin-top: 30px;
 }
 
 .heroButton {
