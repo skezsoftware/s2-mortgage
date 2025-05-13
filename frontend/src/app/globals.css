@@ -28,9 +28,9 @@ body {
   background: var(--background);
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
-  padding: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 180px;
 }
 
 * {
@@ -105,5 +105,8 @@ button {
 @media screen and (max-width: 1024px) {
   .homepage {
     background-image: url('/phone_home_sunset.png')
+  }
+  body {
+    padding-top: 150px;
   }
 }
