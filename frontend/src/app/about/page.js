@@ -5,11 +5,10 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <h1>About Page</h1>
-      <h2>Meet Our Team</h2>
+      <h1>Meet Our Team</h1>
       <div>
         <Image
-          src="globe.svg"
+          src="/nicole.png"
           width={300}
           height={300}
           alt="Picture of Nicole Thompson-Stockmoe"
