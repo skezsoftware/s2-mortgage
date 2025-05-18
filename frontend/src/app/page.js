@@ -1,114 +1,123 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import "./globals.css";
+import {
+  FaHouse,
+  FaClipboardCheck,
+  FaFileSignature,
+  FaPeopleGroup,
+  FaAward,
+  FaLocationDot,
+  FaUserCheck,
+  FaHeadset,
+} from "react-icons/fa6";
+
+const cardData = [
+  {
+    icon: <FaHouse size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Home Mortgage Loans",
+    description:
+      "We offer various options tailored to your unique needs. Our goal is to find the best mortgage solution for your financial situation.",
+  },
+  {
+    icon: <FaClipboardCheck size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Prequalification Services",
+    description:
+      "Our detailed prequalification services will give you insight into your home buying power and help streamline the process.",
+  },
+  {
+    icon: <FaFileSignature size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Contract Loan Processing",
+    description:
+      "Our experienced team provides efficient and reliable contract loan processing services for loan originators and clients.",
+  },
+  {
+    icon: <FaPeopleGroup size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Servicing Those Who Serve",
+    description:
+      "We proudly provide VA loans to U.S. Veterans and Surviving Spouses, delivering the exceptional service you deserve.",
+  },
+];
+
+const whyData = [
+  {
+    icon: <FaAward size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Commitment to Excellence",
+    description:
+      "We prioritize your needs and focus on providing a seamless and stress-free mortgage experience with honest advice and transparent service.",
+  },
+  {
+    icon: <FaLocationDot size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Local Expertise",
+    description:
+      "Serving San Diego, Los Angeles, and surrounding areas, we understand the local market and are well-equipped to assist you.",
+  },
+  {
+    icon: <FaUserCheck size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Client-First Approach",
+    description:
+      "Our commitment to exceptional service means we put your best interests first and guide you through every step.",
+  },
+  {
+    icon: <FaHeadset size={36} color="#4b8cff" style={{ marginBottom: "1rem" }} />,
+    title: "Reliable Support",
+    description:
+      "Whether you are a first-time homebuyer or a seasoned investor, our dedicated team is ready to provide reliable support and answers.",
+  },
+];
 
 // src/app/page.js
 export default function Home() {
   return (
     <>
+      {/* Hero Section with Sunset Background */}
       <div className={styles.homepage}>
-        <div className={styles.homepageContent}>
-          <button className={styles.heroButton}>
-            <a
-              href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              Get Started Now
-            </a>
-          </button>
-          <p>
-            At S2 Mortgage, we take pride in delivering exceptional service and
-            are confident that we have the perfect solution to your unique home
-            loan needs.
-          </p>
-        </div>
+        <div className={styles.heroOverlay}></div>
       </div>
 
-      <section className={styles.section}>
-        <h2>Comprehensive Mortgage Consultation Services</h2>
+      <div className={styles.homeHeroContent}>
+        <h1>Welcome to S2 Mortgage</h1>
         <p>
-          At S2 Mortgage, we take pride in the service we provide and are
-          confident that we have the solution for your individual home loan
-          needs.
+          At S2 Mortgage, we take pride in delivering exceptional service and
+          are confident that we have the perfect solution to your unique home
+          loan needs.
         </p>
-      </section>
+        <button className={styles.heroButton}>
+          <a
+            href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            Get Started Now
+          </a>
+        </button>
+      </div>
 
+      {/* What We Offer Section */}
       <section className={styles.section}>
         <h2>What We Offer</h2>
-        <ul className={styles.serviceList}>
-          <li
-            className={styles.serviceItem}
-            data-description="We offer various options tailored to your unique needs. Our goal is to find the best mortgage solution for your financial situation."
-          >
-            Home Mortgage Loans
-          </li>
-          <li
-            className={styles.serviceItem}
-            data-description="Our detailed prequalification services will give you insight into your home buying power. Understanding your options helps streamline the home buying process and gives you a competitive edge."
-          >
-            Prequalification Services
-          </li>
-          <li
-            className={styles.serviceItem}
-            data-description="Our experienced team provides efficient and reliable contract loan processing services, ensuring loan originators can focus on originating without the expense of having a processor on payroll."
-          >
-            Contract Loan Processing
-          </li>
-          <li
-            className={styles.serviceItem}
-            data-description="Supporting those who have served our country. Through providing VA loans to our U.S. Veterans and Surviving Spouses, we are proud to deliver the exceptional service you deserve."
-          >
-            Servicing Those Who Serve
-          </li>
-        </ul>
+        <div className={styles.cards}>
+          {cardData.map((card, idx) => (
+            <div className={styles.card + ' ' + styles.cardHoverOverlay} key={card.title}>
+              {card.icon}
+              <h3>{card.title}</h3>
+              <div className={styles.cardDescription}>{card.description}</div>
+            </div>
+          ))}
+        </div>
       </section>
 
+      {/* Why Choose Us Section */}
       <section className={styles.section}>
         <h2>Why Choose Us</h2>
         <div className={styles.cards}>
-          <div className={styles.card}>
-            <h3>Commitment to Excellence</h3>
-            <p>
-              We prioritize your needs and focus on providing a seamless and
-              stress-free mortgage experience. Our ethical approach ensures you
-              receive honest advice and transparent service.
-            </p>
-          </div>
-          <div className={styles.card}>
-            <h3>Local Expertise</h3>
-            <p>
-              Serving San Diego, Los Angeles, and surrounding areas, we
-              understand the local market and are well-equipped to assist you
-              with your mortgage needs in California.
-            </p>
-          </div>
-          <div className={styles.card}>
-            <h3>Client-Centric Approach</h3>
-            <p>
-              Our commitment to exceptional service means we put your best
-              interests first. We&apos;re here to guide you through every step
-              and ensure you feel confident and informed.
-            </p>
-          </div>
-          <div className={styles.card}>
-            <h3>Reliable Support</h3>
-            <p>
-              Whether you are a First Time Homebuyer or a seasoned real estate
-              investor, our dedicated team is ready to provide reliable support
-              and answer your questions.
-            </p>
-          </div>
+          {whyData.map((card, idx) => (
+            <div className={styles.card} key={card.title}>
+              {card.icon}
+              <h3>{card.title}</h3>
+              <p className={styles.whyDescription}>{card.description}</p>
+            </div>
+          ))}
         </div>
-      </section>
-
-      <section className={styles.section}>
-        <h3>Explore Our Services</h3>
-        <p>
-          Start your journey with S2 Mortgage, and let us help you achieve your
-          home financing goals. Discover our full range of services and find the
-          one that aligns with your needs.
-        </p>
-        <button className={styles.heroButton}>Explore Our Services</button>
       </section>
     </>
   );

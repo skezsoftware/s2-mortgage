@@ -1,0 +1,146 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 0 2rem 0;
+  position: relative;
+}
+
+/* About section with background image and overlay */
+.section.about-section {
+  background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('/torrey_pines.png') center/cover no-repeat;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(28,37,65,0.10);
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 450px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(28, 37, 65, 0.16);
+  border: 1.5px solid #e0e6f0;
+  padding: 1.8rem 1.4rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 340px;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 16px 48px rgba(75, 140, 255, 0.18);
+  transform: translateY(-4px) scale(1.025);
+  border-color: var(--primary);
+}
+
+.business-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--primary);
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+}
+
+.team-image {
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(75, 140, 255, 0.13);
+  display: block;
+}
+
+.credentials {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.credentials p {
+  margin-bottom: 0.5rem;
+  font-size: 0.98rem;
+  color: var(--primary);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card h4 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section h1, .section h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.section h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), #fff7d6 80%);
+  border-radius: 2px;
+  margin: 0.4rem auto 0 auto;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .team-image {
+    width: 120px;
+    height: 120px;
+  }
+  .business-description {
+    font-size: 1.08rem;
+    padding: 0 1rem;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .section h1 {
+    font-size: 2rem;
+  }
+  .section h2 {
+    font-size: 1.2rem;
+  }
+}
