@@ -1,4 +1,5 @@
 .footer {
     border-top: 2px solid #ccc;
-    color: black;
+    color:var(--primary);
+    background-color: #f1f1e6;
 }

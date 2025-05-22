@@ -9,6 +9,14 @@ export default function Footer() {
       <div>
         <p>Privacy Policy | Terms of Service</p>
       </div>
+      <div>
+        <p>845 15th Street, Ste. 103</p>
+        <p>San Diego, CA 92101</p>
+      </div>
+      <div>
+        <p>(619) 540-0559</p>
+        <p>info@s2mortgage.com</p>
+      </div>
     </footer>
   );
 }

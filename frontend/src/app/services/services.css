@@ -1,0 +1,182 @@
+.heroSection {
+  position: relative;
+  width: 100vw;
+  min-height: 320px;
+  height: 45vh;
+  max-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.heroImage {
+  object-fit: cover;
+  object-position: top center;
+  z-index: 1;
+  filter: brightness(0.85) saturate(1.1);
+}
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(28, 37, 65, 0.55) 0%,
+    rgba(75, 140, 255, 0.18) 100%
+  );
+  z-index: 2;
+}
+.heroContent {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heroContent h1 {
+  font-family: "Lora", serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(28, 37, 65, 0.25);
+  margin: 0;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.serviceCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(28, 37, 65, 0.1);
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary);
+  font-size: 1.08rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 220px;
+  border: 1.5px solid #e0e6f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sellingBuyingImage {
+  display: block;
+  margin: 2rem auto 0 auto;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(28, 37, 65, 0.1);
+}
+.serviceCard:hover {
+  box-shadow: 0 16px 48px rgba(75, 140, 255, 0.13);
+  transform: translateY(-4px) scale(1.025);
+  border-color: var(--primary);
+}
+.serviceCard h3 {
+  font-family: "Lora", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.1rem;
+}
+
+.neighborhoodBlock {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.2rem;
+}
+.neighborhoodText {
+  flex: 2;
+}
+.neighborhoodImageWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.neighborhoodImage {
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(28, 37, 65, 0.1);
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.sectionAlt {
+  background: var(--primary);
+  border-radius: 18px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  max-width: 1200px;
+}
+.sectionAlt h2 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: var(--highlight);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionSoft {
+  background: var(--background);
+  border-radius: 18px;
+  margin: 3rem auto 2rem auto;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  max-width: 1200px;
+}
+.sectionSoft h2 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
+  .neighborhoodBlock {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .neighborhoodImageWrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    min-height: 180px;
+    height: 24vh;
+    max-height: 220px;
+  }
+  .heroContent h1 {
+    font-size: 1.5rem;
+  }
+  .serviceCard {
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+    font-size: 0.98rem;
+  }
+  .sectionAlt,
+  .sectionSoft {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
