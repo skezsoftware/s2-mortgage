@@ -1,79 +1,65 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { getBlogPosts } from "@/lib/sanity";
 import "./blog.css";
 
-const blogs = [
-  {
-    id: 1,
-    title: "5 Steps to Owning Your First Home",
-    excerpt:
-      "Discover a simple and empowering approach to buying your first home in Southern California...",
-    image: "/placeholder_blog.png",
-  },
-  {
-    id: 2,
-    title: "Understanding Prequalification vs. Preapproval",
-    excerpt:
-      "Learn the key differences between prequalification and preapproval, and why it matters for your home search...",
-    image: "/placeholder_blog.png",
-  },
-  {
-    id: 3,
-    title: "Refinancing: Is Now the Right Time?",
-    excerpt:
-      "Explore the benefits and timing of refinancing your mortgage in today's market...",
-    image: "/placeholder_blog.png",
-  },
-  {
-    id: 4,
-    title: "VA Loans: Benefits for Veterans & Families",
-    excerpt:
-      "A guide to VA loans and how they can help veterans and their families achieve homeownership...",
-    image: "/placeholder_blog.png",
-  },
-];
+export const revalidate = 3600; // Revalidate every hour
 
-export default function Blog() {
+export default async function BlogPage() {
+  const posts = await getBlogPosts();
+
   return (
     <>
-      {/* Hero Section */}
-      <section className="heroSection">
-        <div className="heroOverlay"></div>
-        <Image
-          src="/sunset_and_palm_tree.png"
-          alt="Family at the beach"
-          fill
-          className="heroImage"
-          priority
-        />
-        <div className="heroContent">
-          <h1>Blog</h1>
+      <div className="section blog-hero-section">
+        <div className="blog-hero-bg">
+          <Image
+            src="/sunset_and_palm_tree.png"
+            alt="SoCal sunset with palm tree"
+            fill
+            priority
+            className="blog-hero-image"
+            style={{ objectFit: "cover" }}
+          />
+          <div className="blog-hero-overlay"></div>
+          <div className="blog-hero-content">
+            <h1>Blog</h1>
+          </div>
         </div>
-      </section>
-
-      {/* Blog Grid */}
-      <section className="blogGridSection">
-        <div className="blogGrid">
-          {blogs.map((blog) => (
-            <article className="blogCard" key={blog.id}>
-              <div className="blogImageWrapper">
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  width={400}
-                  height={200}
-                  className="blogImage"
-                />
-              </div>
-              <div className="blogCardContent">
-                <h2 className="blogTitle">{blog.title}</h2>
-                <p className="blogExcerpt">{blog.excerpt}</p>
-                <a className="blogReadMore" href="#">Read more &rarr;</a>
-              </div>
+      </div>
+      <div className="blog-container">
+        {/* <h1 className="blog-title">Blog</h1> */}
+        <div className="blog-grid">
+          {posts.map((post) => (
+            <article key={post.slug.current} className="blog-card">
+              <Link href={`/blog/${post.slug.current}`} className="blog-card-link">
+                <div className="thumbnail-wrapper">
+                  {post.thumbnail && (
+                    <Image
+                      src={post.thumbnail}
+                      alt={post.title}
+                      width={400}
+                      height={250}
+                      className="thumbnail"
+                    />
+                  )}
+                </div>
+                <div className="blog-content">
+                  <h2 className="post-title">{post.title}</h2>
+                  <p className="post-excerpt">{post.excerpt}</p>
+                  <time className="post-date">
+                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </div>
+              </Link>
             </article>
           ))}
         </div>
-      </section>
+      </div>
     </>
   );
 }

@@ -97,12 +97,12 @@ export default function Home() {
         <h2>What We Offer</h2>
         <div className={styles.cards + ' ' + styles.whatWeOfferCards}>
           {cardData.map((card, idx) => (
-            <div className={styles.card + ' ' + styles.cardHoverOverlay + ' ' + styles.cardRow} key={card.title}>
+            <div className={styles.card + ' ' + styles.cardHoverOverlay} key={card.title}>
               <div className={styles.cardIcon}>{card.icon}</div>
               <div className={styles.cardText}>
                 <h3>{card.title}</h3>
-                <div className={styles.cardDescription}>{card.description}</div>
               </div>
+              <div className={styles.cardDescription}>{card.description}</div>
             </div>
           ))}
         </div>
