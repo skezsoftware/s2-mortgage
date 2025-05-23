@@ -1,0 +1,61 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(28,37,65,0.1);
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 0.8rem;
+  border: 1px solid #e0e6f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #fff;
+  color: #1c2541;
+  transition: border 0.2s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border: 1.5px solid var(--accent);
+  outline: none;
+}
+
+.contact-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-button {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.08rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(28,37,65,0.08);
+}
+
+.contact-button:disabled {
+  background: #b3cfff;
+  cursor: not-allowed;
+}
+
+.contact-status {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--primary);
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}

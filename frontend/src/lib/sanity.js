@@ -4,7 +4,8 @@ export const client = createClient({
   projectId: 'ffh9628x',
   dataset: 'production',
   apiVersion: '2024-03-19',
-  useCdn: true,
+  useCdn: false,
+  token: process.env.SANITY_API_TOKEN,
 })
 
 export async function getBlogPosts() {
