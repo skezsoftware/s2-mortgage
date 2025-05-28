@@ -120,11 +120,34 @@
 }
 
 .button {
-  background: var(--background);
-  color: var(--primary);
+  background: var(--accent);
+  color: #fff;
   border: 1.5px solid var(--primary);
   border-radius: 18px;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 1rem;
+}
+
+.button-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 /** RESPONSIVE **/

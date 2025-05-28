@@ -115,7 +115,8 @@ export default function LoanProcess() {
           <button className="button">
             <a
               href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
-              style={{ color: "inherit", textDecoration: "none" }}
+              style={{ textDecoration: "none" }}
+              className="button-link"
             >
               Get Started Now
             </a>
