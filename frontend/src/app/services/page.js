@@ -23,7 +23,7 @@ export default function Services() {
 
       {/* Services Blocks */}
       <div className="servicesGrid">
-        <div className="serviceCard">
+        <div className="serviceCard-2">
           <h3>Prequalification Services</h3>
           <p>
             Understanding your financial readiness before starting your home
@@ -34,7 +34,7 @@ export default function Services() {
             buyer.
           </p>
         </div>
-        <div className="serviceCard">
+        <div className="serviceCard-2">
           <h3>Mortgage Loans</h3>
           <p>
             Navigating the world of mortgage loans can be complex, but with S2
@@ -46,7 +46,7 @@ export default function Services() {
             rates.
           </p>
         </div>
-        <div className="serviceCard">
+        <div className="serviceCard-2">
           <h3>Contract Loan Processing</h3>
           <p>
             Efficiency and accuracy are critical to successful loan processing.
@@ -57,7 +57,7 @@ export default function Services() {
             informed.
           </p>
         </div>
-        <div className="serviceCard">
+        <div className="serviceCard-2">
           <h3>Our Full Range of Mortgage Services</h3>
           <div className="neighborhoodBlock">
             <div className="neighborhoodText">

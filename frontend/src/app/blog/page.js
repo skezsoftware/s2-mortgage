@@ -26,6 +26,12 @@ export default async function BlogPage() {
             <h1>Blog</h1>
           </div>
         </div>
+        <div className="blog-info-section">
+          <p>
+            Welcome to our blog! Here you'll find articles about the latest trends
+            in the mortgage industry, tips for first-time homebuyers, and more.
+          </p>
+        </div>
       </div>
       <div className="blog-container">
         {/* <h1 className="blog-title">Blog</h1> */}
@@ -46,6 +52,7 @@ export default async function BlogPage() {
                 </div>
                 <div className="blog-content">
                   <h2 className="post-title">{post.title}</h2>
+                  <hr className="post-divider" />
                   <p className="post-excerpt">{post.excerpt}</p>
                   <time className="post-date">
                     {new Date(post.publishedAt).toLocaleDateString("en-US", {

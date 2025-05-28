@@ -24,16 +24,6 @@
   z-index: 1;
 }
 
-.blog-hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(28,37,65,0.6) 0%, rgba(28,37,65,0.3) 100%);
-  z-index: 2;
-}
-
 .blog-hero-content {
   position: relative;
   z-index: 3;
@@ -47,28 +37,30 @@
   height: 100%;
 }
 
-.blog-hero-content h1 {
-  font-family: 'Lora', serif;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 0 2px 12px rgba(28,37,65,0.25);
-  margin: 0;
-  text-align: center;
+.blog-info-section {
+  max-width: 800px;
+  margin: 2.5rem auto 2.5rem auto;
+  padding: 0;
   position: relative;
-  display: inline-block;
-  padding-bottom: 0.4rem;
+  text-align: center;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2rem;
+  
 }
 
-.blog-hero-content h1::after {
-  content: '';
-  display: block;
-  margin: 0.5rem auto 0 auto;
-  width: 80%;
-  height: 2px;
-  background: #fff;
-  border-radius: 1px;
-  opacity: 0.9;
+.blog-hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  text-shadow: 0 2px 12px rgba(28,37,65,0.25);
 }
 
 /** BLOG GRID & CARDS **/
@@ -79,7 +71,6 @@
 }
 
 .blog-title {
-  font-family: 'Lora', serif;
   font-size: 2.5rem;
   color: var(--primary);
   text-align: center;
@@ -100,7 +91,7 @@
 }
 
 .blog-card {
-  background: #fff7d6;
+  background: var(--primary);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(28, 37, 65, 0.13);
   border: 1.5px solid #e0e6f0;
@@ -158,7 +149,7 @@
 .post-title {
   font-family: 'Lora', serif;
   font-size: 1.35rem;
-  color: #1c2541;
+  color: #fff;
   margin-bottom: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -167,14 +158,21 @@
   transition: color 0.2s;
 }
 
-.blog-card-link:hover .post-title {
-  color: #4b8cff;
-  text-decoration: underline;
-}
+/* .post-title {
+  font-family: 'Lora', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1c2541;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+} */
 
 .post-excerpt {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #1c2541;
+  color: #fff;
   font-size: 1.05rem;
   margin-bottom: 1.1rem;
   flex: 1;
@@ -183,7 +181,7 @@
 
 .post-date {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #4b8cff;
+  color: #fff;
   font-size: 0.98rem;
   margin-top: auto;
   text-align: right;
@@ -242,35 +240,15 @@
   margin-bottom: 2rem;
 }
 
-.post-title {
-  font-family: 'Lora', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #1c2541;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-}
-
-.post-title::after {
-  content: '';
-  display: block;
-  margin: 0.5rem auto 0 auto;
-  width: 60%;
-  height: 2px;
-  background: #4b8cff;
-  border-radius: 1px;
-  opacity: 0.7;
-}
-
-.post-date {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #4b8cff;
-  font-size: 1.05rem;
-  margin-bottom: 1.5rem;
-  display: block;
+.post-divider {
+  border: none !important;
+  border-top: 3px solid #fff !important;
+  background: none !important;
+  height: 0 !important;
+  width: 100% !important;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  opacity: 1 !important;
 }
 
 .post-image {

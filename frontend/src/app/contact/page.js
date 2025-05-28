@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import './contact.css'
+import "./contact.css";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -26,54 +26,86 @@ export default function ContactPage() {
         setEmail("");
         setMessage("");
       } else {
-        setStatus({ type: "error", message: data.message || "Something went wrong. Please try again." });
+        setStatus({
+          type: "error",
+          message: data.message || "Something went wrong. Please try again.",
+        });
       }
     } catch (err) {
-      setStatus({ type: "error", message: "Something went wrong. Please try again." });
+      setStatus({
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <section>
-      <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
-        <input
-          className="contact-input"
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          className="contact-input"
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <textarea
-          className="contact-textarea"
-          name="message"
-          placeholder="Your Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          rows={6}
-          required
-        />
-        <button className="contact-button" type="submit" disabled={loading}>
-          {loading ? "Sending..." : "Send Message"}
-        </button>
-        {status && (
-          <div className="contact-status" style={{ color: status.type === "success" ? "var(--primary)" : "#d32f2f" }}>
-            {status.message}
+    <>
+      <div className="contact-hero-section">
+        <h1>We’d Love to Hear From You!</h1>
+        <p>
+          Whether you’re interested in working together, have questions about
+          our services, or just want to say hello, we’re here for you. Fill out
+          the form below and our team will get back to you as soon as possible.
+          Let’s connect and see how we can help you achieve your goals!
+        </p>
+      </div>
+      <section>
+        <form
+          className="contact-form"
+          onSubmit={handleSubmit}
+          autoComplete="off"
+        >
+          <input
+            className="contact-input"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <input
+            className="contact-input"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <textarea
+            className="contact-textarea"
+            name="message"
+            placeholder="Your Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            rows={6}
+            required
+            maxLength={500}
+          />
+          <div
+            style={{ textAlign: "right", fontSize: "0.95rem", color: "#888" }}
+          >
+            {message.length} / 500 characters
           </div>
-        )}
-      </form>
-    </section>
+          <button className="contact-button" type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Send Message"}
+          </button>
+          {status && (
+            <div
+              className="contact-status"
+              style={{
+                color: status.type === "success" ? "var(--primary)" : "#d32f2f",
+              }}
+            >
+              {status.message}
+            </div>
+          )}
+        </form>
+      </section>
+    </>
   );
 }

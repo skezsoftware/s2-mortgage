@@ -24,7 +24,7 @@
 }
 
 .logo {
-  max-height: 250px;
+  max-height: 350px;
   height: auto;
   width: auto;
   display: block;
@@ -47,16 +47,13 @@
   font-size: 1.2rem;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: var(--accent);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+.nav-link-active {
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 0.5rem 2rem !important;
+  margin: 0 0.2rem;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover::after {
@@ -95,9 +92,9 @@
     border-radius: 4px;
   }
 
-  .nav-link:hover {
+  /* .nav-link:hover {
     background-color: rgba(75, 140, 255, 0.1);
-  }
+  } */
 
   .nav-link::after {
     display: none;

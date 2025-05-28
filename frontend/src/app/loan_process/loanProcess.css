@@ -22,15 +22,7 @@
   top: 0;
   left: 0;
 }
-.heroOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(28,37,65,0.7) 0%, rgba(28,37,65,0.45) 100%);
-  z-index: 2;
-}
+
 .heroContent {
   position: relative;
   z-index: 3;
@@ -47,9 +39,10 @@
   font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
   text-shadow: 0 2px 12px rgba(28,37,65,0.25);
-  margin: 0;
 }
 
 /** GRID & CARDS **/
@@ -85,7 +78,7 @@
   box-shadow: 0 8px 32px rgba(28,37,65,0.10);
   padding: 2.2rem 2rem 1.5rem 2rem;
   font-family: 'Source Sans Pro', sans-serif;
-  color: var(--highlight);
+  color: #fff;
   font-size: 1.08rem;
   display: flex;
   flex-direction: column;
@@ -94,11 +87,11 @@
   border: 1.5px solid #e0e6f0;
   transition: box-shadow 0.2s, transform 0.2s;
 }
-.serviceCard:hover {
+/* .serviceCard:hover {
   box-shadow: 0 16px 48px rgba(75,140,255,0.13);
   transform: translateY(-4px) scale(1.025);
   border-color: #4b8cff;
-}
+} */
 .serviceCard h1, .serviceCard h2, .serviceCard h3 {
   font-weight: 700;
   margin-bottom: 1.1rem;
@@ -108,7 +101,13 @@
   margin-bottom: 0.7rem;
 }
 .serviceCard h2 {
-  font-size: 1.35rem;
+  font-size: 1.9rem;
+  text-align: center;
+  border-bottom: 2px solid var(--background);
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 1.2rem;
 }
 .serviceCard h3 {
   font-size: 1.1rem;
@@ -120,13 +119,13 @@
   margin-bottom: 1rem;
 }
 
-/* * ALTERNATING BACKGROUNDS *
-.servicesGrid .serviceCard:nth-child(even) {
-  background: #f1f1e6;
+.button {
+  background: var(--background);
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  border-radius: 18px;
+  padding: 0.5rem 1rem;
 }
-.servicesGrid .serviceCard:nth-child(odd) {
-  background: #fff7d6;
-} */
 
 /** RESPONSIVE **/
 @media (max-width: 900px) {

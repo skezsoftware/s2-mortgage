@@ -53,7 +53,7 @@
 }
 
 .heroButton {
-  background: var(--accent);
+  background: var(--primary);
   color: #fff;
   border: none;
   padding: 1rem 2.5rem;

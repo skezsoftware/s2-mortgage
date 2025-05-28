@@ -14,25 +14,25 @@ import {
 
 const cardData = [
   {
-    icon: <FaHouse size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaHouse size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Home Mortgage Loans",
     description:
       "We offer various options tailored to your unique needs. Our goal is to find the best mortgage solution for your financial situation.",
   },
   {
-    icon: <FaClipboardCheck size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaClipboardCheck size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Prequalification Services",
     description:
       "Our detailed prequalification services will give you insight into your home buying power and help streamline the process.",
   },
   {
-    icon: <FaFileSignature size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaFileSignature size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Contract Loan Processing",
     description:
       "Our experienced team provides efficient and reliable contract loan processing services for loan originators and clients.",
   },
   {
-    icon: <FaPeopleGroup size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaPeopleGroup size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Servicing Those Who Serve",
     description:
       "We proudly provide VA loans to U.S. Veterans and Surviving Spouses, delivering the exceptional service you deserve.",
@@ -41,25 +41,25 @@ const cardData = [
 
 const whyData = [
   {
-    icon: <FaAward size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaAward size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Commitment to Excellence",
     description:
       "We prioritize your needs and focus on providing a seamless and stress-free mortgage experience with honest advice and transparent service.",
   },
   {
-    icon: <FaLocationDot size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaLocationDot size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Local Expertise",
     description:
       "Serving San Diego, Los Angeles, and surrounding areas, we understand the local market and are well-equipped to assist you.",
   },
   {
-    icon: <FaUserCheck size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaUserCheck size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Client-First Approach",
     description:
       "Our commitment to exceptional service means we put your best interests first and guide you through every step.",
   },
   {
-    icon: <FaHeadset size={36} color="var(--accent)" style={{ marginBottom: "1rem" }} />,
+    icon: <FaHeadset size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Reliable Support",
     description:
       "Whether you are a first-time homebuyer or a seasoned investor, our dedicated team is ready to provide reliable support and answers.",
@@ -98,7 +98,7 @@ export default function Home() {
         <div className={styles.cards + ' ' + styles.whatWeOfferCards}>
           {cardData.map((card, idx) => (
             <div className={styles.card + ' ' + styles.cardHoverOverlay} key={card.title}>
-              <div className={styles.cardIcon}>{card.icon}</div>
+              <div className="homeIcons">{card.icon}</div>
               <div className={styles.cardText}>
                 <h3>{card.title}</h3>
               </div>
