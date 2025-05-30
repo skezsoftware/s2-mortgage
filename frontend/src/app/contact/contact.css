@@ -90,3 +90,39 @@
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  .contact-hero-section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(28,37,65,0.8);
+  
+  }
+  .contact-hero-section h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .contact-hero-section p {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .contact-form {
+    margin: 1rem auto;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(28,37,65,0.8);
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .contact-input, .contact-textarea {
+    font-size: 0.95rem;
+  }
+  .contact-button {
+    font-size: 1rem;
+  }
+  .contact-status {
+    font-size: 0.95rem;
+  }
+}

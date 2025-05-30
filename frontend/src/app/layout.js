@@ -1,5 +1,6 @@
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import UpButton from './components/up_button/upButton';
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <UpButton />
         <Footer />
       </body>
     </html>

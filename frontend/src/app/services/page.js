@@ -190,10 +190,12 @@ export default function Services() {
         <div className="servicesGrid">
           <div className="serviceCard">
             <h3>Our Cashout Options</h3>
-            <p>VA</p>
-            <p>FHA</p>
-            <p>Conventional</p>
-            <p>Lines of Credit</p>
+            <ul className="serviceCard-list">
+              <li>VA</li>
+              <li>FHA</li>
+              <li>Conventional</li>
+              <li>Lines of Credit</li>
+            </ul>
             <p>
               Additional Products are available for self-employed borrowers,
               investors, and those borrowers needing alternative lending
@@ -210,18 +212,22 @@ export default function Services() {
             </p>
           </div>
           <div className="serviceCard">
-            <h3>Reduce your rate and save money</h3>
-            <p>FHA Streamline</p>
-            <p>Conventional</p>
+            <h3>Reduce Your Rate and Save Money</h3>
+            <ul className="serviceCard-list">
+              <li>FHA Streamline</li>
+              <li>Conventional</li>
+            </ul>
             <p>
               A rate/term refinance involves replacing your current mortgage
               with a new one, typically to secure better terms. Here's why you
               might consider it:
             </p>
-            <p>Lines of Credit</p>
-            <p>Lower Interest Rate</p>
-            <p>Improve Loan Feature</p>
-            <p>Adjust Your Loan Term</p>
+            <ul className="serviceCard-list">
+              <li>Lines of Credit</li>
+              <li>Lower Interest Rate</li>
+              <li>Improve Loan Feature</li>
+              <li>Adjust Your Loan Term</li>
+            </ul>
             <p>
               A rate/term refinance can help you save money and better match
               your mortgage to your financial situation. Take special note if
@@ -231,7 +237,7 @@ export default function Services() {
             </p>
           </div>
           <div className="serviceCard">
-            <h3>Unlock your home's equity with a cash-out refinance.</h3>
+            <h3>Unlock Your Home's Equity with a Cash-Out Refinance</h3>
             <p>
               A cash-out refinance allows you to access your home's equity by
               replacing your current mortgage with a new one for a higher
@@ -239,15 +245,17 @@ export default function Services() {
             </p>
           </div>
           <div className="serviceCard">
-            <h3>Why consider a cash-out refinance: –Debt consolidation</h3>
-            <p>Debt consolidation</p>
-            <p>Home improvements</p>
-            <p>Investment opportunities</p>
-            <p>Build an ADU/Granny Flat</p>
-            <p>Cover major medical expenses</p>
-            <p>Pay tuition</p>
-            <p>Take a vacation</p>
-            <p>Cash reserves/emergency funds</p>
+            <h3>Why Consider a Cash-Out Refinance: Debt Consolidation</h3>
+            <ul className="serviceCard-list">
+              <li>Debt consolidation</li>
+              <li>Home improvements</li>
+              <li>Investment opportunities</li>
+              <li>Build an ADU/Granny Flat</li>
+              <li>Cover major medical expenses</li>
+              <li>Pay tuition</li>
+              <li>Take a vacation</li>
+              <li>Cash reserves/emergency funds</li>
+            </ul>
           </div>
         </div>
       </section>

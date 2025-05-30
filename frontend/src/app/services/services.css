@@ -46,7 +46,7 @@
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 0.5rem;
-  text-shadow: 0 2px 12px rgba(28,37,65,0.25);
+  text-shadow: 0 2px 12px rgba(28, 37, 65, 0.25);
 }
 
 .servicesGrid {
@@ -71,8 +71,22 @@
   justify-content: flex-start;
   min-height: 220px;
   border: 1.5px solid #e0e6f0;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
 }
+
+.serviceCard-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.1rem 0.7rem;
+  margin-left: 1.2rem;
+  padding: 0;
+  list-style: disc;
+  font-size: 1.09rem;
+  font-weight: 600;
+}
+
 .serviceCard-2 {
   background: #eaf3fb;
   border-radius: 18px;
@@ -86,7 +100,22 @@
   justify-content: flex-start;
   min-height: 220px;
   border: 1.5px solid #e0e6f0;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.serviceCard-2 h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1.1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .sellingBuyingImage {
@@ -102,11 +131,16 @@
   border-color: var(--primary);
 }
 .serviceCard h3 {
-  font-family: "Lora", serif;
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--primary);
   margin-bottom: 1.1rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .neighborhoodBlock {

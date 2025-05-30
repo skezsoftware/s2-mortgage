@@ -9,7 +9,7 @@ export default function LoanProcess() {
       <section className="heroSection">
         <div className="heroOverlay"></div>
         <Image
-          src="/single_home.png"
+          src="/1.png"
           alt="Single home"
           fill
           className="heroImage"

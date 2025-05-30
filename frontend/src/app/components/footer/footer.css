@@ -46,6 +46,9 @@
         gap: 1.2rem;
         padding: 1.2rem 0.5rem;
     }
+    .footer-content {
+        font-size: 1rem;
+    }
     .footer-col {
         min-width: unset;
     }

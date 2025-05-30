@@ -39,8 +39,8 @@
   font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
+  color: #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 0.5rem;
   text-shadow: 0 2px 12px rgba(28,37,65,0.25);
 }
@@ -87,11 +87,7 @@
   border: 1.5px solid #e0e6f0;
   transition: box-shadow 0.2s, transform 0.2s;
 }
-/* .serviceCard:hover {
-  box-shadow: 0 16px 48px rgba(75,140,255,0.13);
-  transform: translateY(-4px) scale(1.025);
-  border-color: #4b8cff;
-} */
+
 .serviceCard h1, .serviceCard h2, .serviceCard h3 {
   font-weight: 700;
   margin-bottom: 1.1rem;
@@ -101,7 +97,6 @@
   margin-bottom: 0.7rem;
 }
 .serviceCard h2 {
-  font-size: 1.9rem;
   text-align: center;
   border-bottom: 2px solid var(--background);
   width: 100%;
@@ -160,18 +155,63 @@
 }
 @media (max-width: 600px) {
   .heroSection {
-    min-height: 180px;
-    height: 24vh;
-    max-height: 220px;
+    min-height: 120px;
+    height: 20vh;
+    max-height: none;
+    padding: 0;
+  }
+  .heroImage {
+    min-height: 120px;
+    max-height: 180px;
+    height: 120px;
   }
   .heroContent h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    padding-bottom: 0.2rem;
+    border-bottom-width: 2px;
+  }
+  .stagesCard {
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
+    font-size: 0.98rem;
+    margin-bottom: 1.5rem;
+  }
+  .stagesCard h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .stagesCard h2 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .servicesGrid {
-    padding: 0.5rem 0.2rem 0 0.2rem;
+    gap: 1.5rem;
+    padding: 0.2rem 0.1rem 0 0.1rem;
   }
   .serviceCard {
-    padding: 1.2rem 0.8rem 1rem 0.8rem;
-    font-size: 0.98rem;
+    padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .serviceCard h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .serviceCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  .serviceCard p {
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+  }
+  .button {
+    font-size: 1.05rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: 10px;
+    max-width: 100%;
   }
 }

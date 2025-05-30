@@ -15,7 +15,7 @@ export default function About() {
         </p>
       </section>
 
-      <section className="section">
+      <section className="section team-section">
         <h2>Meet Our Team</h2>
         <div className="cards">
           <div className="card">

@@ -37,6 +37,7 @@ export default function Header() {
               <Link
                 href="/"
                 className={`nav-link${pathname === "/" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
@@ -45,6 +46,7 @@ export default function Header() {
               <Link
                 href="/about"
                 className={`nav-link${pathname === "/about" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
@@ -53,6 +55,7 @@ export default function Header() {
               <Link
                 href="/services"
                 className={`nav-link${pathname === "/services" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
@@ -61,24 +64,27 @@ export default function Header() {
               <Link
                 href="/blog"
                 className={`nav-link${pathname === "/blog" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                href="/contact"
-                className={`nav-link${pathname === "/contact" ? " nav-link-active" : ""}`}
+                href="/loan_process"
+                className={`nav-link${pathname === "/loan_process" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                Loan Process
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                href="/loan_process"
-                className={`nav-link${pathname === "/loan_process" ? " nav-link-active" : ""}`}
+                href="/contact"
+                className={`nav-link${pathname === "/contact" ? " nav-link-active" : ""}`}
+                onClick={() => setIsMenuOpen(false)}
               >
-                Loan Process
+                Contact
               </Link>
             </li>
           </ul>
