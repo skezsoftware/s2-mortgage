@@ -26,13 +26,18 @@
 .heroContent {
   position: relative;
   z-index: 3;
-  width: 100%;
+  width: fit-content;
   text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--primary);
+  opacity: 0.85;
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(28,37,65,0.10);
 }
 .heroContent h1 {
   font-family: 'Lora', serif;

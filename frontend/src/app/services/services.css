@@ -31,22 +31,23 @@
 .heroContent {
   position: absolute;
   z-index: 3;
-  width: 100%;
+  width: fit-content;
   text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--primary);
+  opacity: 0.85;
+  padding: 1.5rem 2.5rem;
+  border-radius: 12px;
 }
 .heroContent h1 {
-  font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #fff;
   border-bottom: 2px solid #fff;
-  padding-bottom: 0.5rem;
-  text-shadow: 0 2px 12px rgba(28, 37, 65, 0.25);
 }
 
 .servicesGrid {
