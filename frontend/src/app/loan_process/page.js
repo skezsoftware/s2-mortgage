@@ -26,9 +26,9 @@ export default function LoanProcess() {
         <h2>For Home Buyers</h2>
         <p>
           Navigating the home loan process can seem daunting, but understanding
-          each stage can make it much smoother. At S2 Mortgage, we're here to
+          each stage can make it much smoother. At S2 Mortgage, we&apos;re here to
           guide you through every step, ensuring you have the support you need
-          to secure your dream home. Here's a breakdown of the key stages in the
+          to secure your dream home. Here&apos;s a breakdown of the key stages in the
           home loan process:
         </p>
       </div>
@@ -38,13 +38,13 @@ export default function LoanProcess() {
           <h2>Pre-Approval</h2>
           <h3>WHAT IT IS:</h3>
           <p>
-            Before you start house hunting, you'll provide information about
+            Before you start house hunting, you&apos;ll provide information about
             your income, assets, and credit so we can help determine a realistic
             price range for your future home.
           </p>
           <h3>WHY IT MATTERS:</h3>
           <p>
-            Getting pre-approved shows sellers you're a serious buyer,
+            Getting pre-approved shows sellers you&apos;re a serious buyer,
             strengthens your offer, and gives you the confidence to search with
             clarity.
           </p>
@@ -81,8 +81,8 @@ export default function LoanProcess() {
           <h2>Loan Approval</h2>
           <h3>WHAT IT IS:</h3>
           <p>
-            After underwriting, you'll get formal loan approval with the terms
-            and conditions. We'll then finalize the details and prepare for
+            After underwriting, you&apos;ll get formal loan approval with the terms
+            and conditions. We&apos;ll then finalize the details and prepare for
             closing.
           </p>
           <h3>WHY IT MATTERS:</h3>
@@ -100,8 +100,8 @@ export default function LoanProcess() {
           </p>
           <h3>WHY IT MATTERS:</h3>
           <p>
-            Successful closing means you're officially a homeowner! It's the
-            culmination of all the hard work and preparation you've put in.
+            Successful closing means you&apos;re officially a homeowner! It&apos;s the
+            culmination of all the hard work and preparation you&apos;ve put in.
           </p>
         </div>
         <div className="serviceCard">

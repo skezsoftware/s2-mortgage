@@ -28,8 +28,9 @@ export default async function BlogPage() {
         </div>
         <div className="blog-info-section">
           <p>
-            Welcome to our blog! Here you'll find articles about the latest trends
-            in the mortgage industry, tips for first-time homebuyers, and more.
+            Welcome to our blog! Here you&apos;ll find articles about the latest
+            trends in the mortgage industry, tips for first-time homebuyers, and
+            more.
           </p>
         </div>
       </div>
