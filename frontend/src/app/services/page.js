@@ -38,7 +38,7 @@ export default function Services() {
           <h3>Mortgage Loans</h3>
           <p>
             Navigating the world of mortgage loans can be complex, but with S2
-            Mortgage, it's straightforward and stress-free. We offer various
+            Mortgage, it&apos;s straightforward and stress-free. We offer various
             mortgage options, including fixed-rate, adjustable-rate, and
             specialty loans, tailored to fit your financial situation and
             homeownership goals. Our team works closely with you to identify the
@@ -63,7 +63,7 @@ export default function Services() {
             <div className="neighborhoodText">
               <p>
                 At S2 Mortgage, we offer specialized mortgage services to meet
-                all your home financing needs. Whether you're looking to
+                all your home financing needs. Whether you&apos;re looking to
                 purchase your first home, refinance an existing mortgage, or
                 require expert loan processing, our experienced team is here to
                 provide personalized solutions and exceptional support
@@ -114,7 +114,7 @@ export default function Services() {
               roots and connect with your community.
             </p>
             <p>
-              We're here to guide you through this exciting journey and ensure
+              We&apos;re here to guide you through this exciting journey and ensure
               your first home-buying experience is smooth and rewarding!
             </p>
           </div>
@@ -122,16 +122,16 @@ export default function Services() {
             <h3>Selling and Buying</h3>
             <p>
               Selling your home and buying a new one is an exciting opportunity
-              for a fresh start. It's a chance to find a home that better suits
-              your current needs, capitalize on your home's equity, and secure a
+              for a fresh start. It&apos;s a chance to find a home that better suits
+              your current needs, capitalize on your home&apos;s equity, and secure a
               stronger financial position.
             </p>
             <p>
-              Whether you're seeking more space, a new location, or modern
-              amenities, we're here to guide you through the entire process to
+              Whether you&apos;re seeking more space, a new location, or modern
+              amenities, we&apos;re here to guide you through the entire process to
               find your next dream home.
             </p>
-            <p>Let's make your transition smooth and rewarding!</p>
+            <p>Let&apos;s make your transition smooth and rewarding!</p>
             <Image
               src="/palm_trees_below.png"
               alt="Selling and Buying"
@@ -148,20 +148,20 @@ export default function Services() {
               insurance. With flexible credit and qualification standards,
               homeownership is more accessible and affordable.
             </p>
-            <p>You've served our country—now let us serve you.</p>
+            <p>You&apos;ve served our country—now let us serve you.</p>
           </div>
           <div className="serviceCard">
             <h3>Second/Vacation Homes</h3>
             <p>
               Purchasing a second home or vacation retreat is an exciting
               opportunity for relaxation and potential investment. Whether
-              you're dreaming of a beachfront escape, a mountain cabin, or a
+              you&apos;re dreaming of a beachfront escape, a mountain cabin, or a
               city getaway, owning a second home gives you the flexibility to
               enjoy your favorite destination anytime.
             </p>
             <p>
-              We're here to guide you through financing and rental potential to
-              make your second home a rewarding investment. Let's make your
+              We&apos;re here to guide you through financing and rental potential to
+              make your second home a rewarding investment. Let&apos;s make your
               vision a reality!
             </p>
           </div>
@@ -169,7 +169,7 @@ export default function Services() {
             <h3>Investors</h3>
             <p>
               At S2 Mortgage, we offer flexible financing solutions to support
-              your investment goals. Whether you're buying your first investment
+              your investment goals. Whether you&apos;re buying your first investment
               property or expanding your portfolio, we provide options like
               traditional mortgages, Non QM loans, alternative options for
               self-employed borrowers, private money lending, and lines of
@@ -177,7 +177,7 @@ export default function Services() {
             </p>
             <p>
               Our experts work closely with you to assess your needs and
-              recommend the best financing strategies. Let's create a plan to
+              recommend the best financing strategies. Let&apos;s create a plan to
               maximize your investment opportunities.
             </p>
           </div>
@@ -219,7 +219,7 @@ export default function Services() {
             </ul>
             <p>
               A rate/term refinance involves replacing your current mortgage
-              with a new one, typically to secure better terms. Here's why you
+              with a new one, typically to secure better terms. Here&apos;s why you
               might consider it:
             </p>
             <ul className="serviceCard-list">
@@ -237,9 +237,9 @@ export default function Services() {
             </p>
           </div>
           <div className="serviceCard">
-            <h3>Unlock Your Home's Equity with a Cash-Out Refinance</h3>
+            <h3>Unlock Your Home&apos;s Equity with a Cash-Out Refinance</h3>
             <p>
-              A cash-out refinance allows you to access your home's equity by
+              A cash-out refinance allows you to access your home&apos;s equity by
               replacing your current mortgage with a new one for a higher
               amount. Here are some reasons why it might be a good option:
             </p>
