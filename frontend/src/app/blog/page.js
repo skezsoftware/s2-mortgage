@@ -1,8 +1,9 @@
+import "./blog.css";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/sanity";
-import "./blog.css";
+
 
 export const revalidate = 3600; // Revalidate every hour
 
@@ -39,7 +40,10 @@ export default async function BlogPage() {
         <div className="blog-grid">
           {posts.map((post) => (
             <article key={post.slug.current} className="blog-card">
-              <Link href={`/blog/${post.slug.current}`} className="blog-card-link">
+              <Link
+                href={`/blog/${post.slug.current}`}
+                className="blog-card-link"
+              >
                 <div className="thumbnail-wrapper">
                   {post.thumbnail && (
                     <Image
