@@ -23,19 +23,19 @@ const cardData = [
     icon: <FaClipboardCheck size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Prequalification Services",
     description:
-      "Our detailed prequalification services will give you insight into your home buying power and help streamline the process.",
+      "Our detailed prequalification services will give you insight into your home buying power. Understanding your options helps streamline the home buying process and gives you a competitive edge.",
   },
   {
     icon: <FaFileSignature size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
     title: "Contract Loan Processing",
     description:
-      "Our experienced team provides efficient and reliable contract loan processing services for loan originators and clients.",
+      "Our experienced team provides efficient and reliable contract loan processing services, ensuring loan originators are able to maximize productivity without incurring processing payroll expenses.",
   },
   {
     icon: <FaPeopleGroup size={36} color="var(--primary)" style={{ marginBottom: "1rem" }} />,
-    title: "Servicing Those Who Serve",
+    title: "Serving Those Who Serve",
     description:
-      "We proudly provide VA loans to U.S. Veterans and Surviving Spouses, delivering the exceptional service you deserve.",
+      "We take great pride in serving those who’ve served our nation—offering VA loans to U.S. Veterans and Surviving Spouses, with the exceptional care and commitment you deserve.",
   },
 ];
 
