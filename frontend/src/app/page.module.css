@@ -1,8 +1,8 @@
 .homepage {
-  background-image: url('/sunset.png');
+  background-image: url('/sunset2.png');
   background-size: cover;
   background-position: top;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@
   border-radius: 18px;
   color: var(--primary);
   box-shadow: 0 8px 32px rgba(28,37,65,0.10);
-  margin-top: 4em;
+  margin-top: -15rem;
 }
 
 .homeHeroContent h1 {
@@ -69,24 +69,6 @@
   background: #3366ff;
 }
 
-.section {
-  max-width: 1100px;
-  margin: 1.2rem auto 1.2rem auto;
-  padding: 1.2rem 0.5rem;
-}
-
-.section h2 {
-  text-align: center;
-  color: var(--primary);
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid var(--primary);
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -96,26 +78,45 @@
   align-items: stretch;
 }
 
+.whatWeOfferH2 {
+  text-align: center;
+}
+.section h2 {
+  text-align: center;
+}
+
 .card,
 .cardHoverOverlay {
-  background: #fff;
+  background-size: cover;
+  background-position: center;
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(28, 37, 65, 0.16);
-  border: 1.5px solid #e0e6f0;
-  padding: 1.2rem 1rem;
-  flex: 1 1 250px;
-  min-width: 200px;
-  max-width: 260px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(28,37,65,0.25);
+  font-weight: 500;
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  min-width: 350px;
+  max-width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 180px;
-  min-height: 180px;
+  height: 270px;
+  min-height: 220px;
   transition: box-shadow 0.2s, transform 0.2s;
   position: relative;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  z-index: 1;
+  border-radius: inherit;
 }
 
 .card:hover {
@@ -139,6 +140,8 @@
 .cardText h3 {
   margin-bottom: 0;
   width: 100%;
+  font-size: 2rem;
+  z-index: 2;
 }
 
 .cardDescription {
@@ -226,8 +229,14 @@
 
 /* What We Offer Section: tighter grid */
 .whatWeOfferCards {
-  gap: 0.7rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Why Choose Us Section: background and no boxes */
@@ -285,7 +294,7 @@
 
 @media screen and (max-width: 1024px) {
   .homepage {
-    background-image: url('/phone_home_sunset.png');
+    background-image: url('/phone.png');
     background-position: top;
     min-height: 400px;
     width: 100%;
@@ -349,4 +358,77 @@
   margin-top: 0.2rem;
   font-size: 0.98rem;
   text-align: left;
+}
+
+.exploreServicesWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.exploreServicesButton {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(28,37,65,0.18);
+  transition: background 0.2s, box-shadow 0.2s;
+  text-align: center;
+  cursor: pointer;
+}
+.exploreServicesButton:hover {
+  background: #3366ff;
+  box-shadow: 0 4px 16px rgba(75, 140, 255, 0.18);
+}
+
+.exploreServicesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin: 3rem 0 2rem 0;
+}
+
+.exploreServicesCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(28,37,65,0.13);
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.exploreServicesTitle { 
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.exploreServicesSubtitle {
+  color: #444;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.exploreServicesButton {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(28,37,65,0.18);
+  transition: background 0.2s, box-shadow 0.2s;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.exploreServicesButton:hover {
+  background: #222b44;
+  box-shadow: 0 4px 16px rgba(75, 140, 255, 0.18);
 }

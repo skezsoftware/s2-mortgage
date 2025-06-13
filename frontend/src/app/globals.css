@@ -27,7 +27,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 * {
@@ -66,12 +66,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ul {
-  list-style: none;
-} */
-
 li {
-  margin-bottom: 1rem;
   position: relative;
   cursor: pointer;
 }
@@ -100,9 +95,6 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-  .homepage {
-    background-image: url('/phone_home_sunset.png')
-  }
   body {
     padding-top: 150px;
   }

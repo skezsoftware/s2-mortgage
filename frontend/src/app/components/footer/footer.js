@@ -13,7 +13,7 @@ export default function Footer() {
           <FaPhoneAlt /> (619) 540-0559
         </p>
         <p>
-          <FaEnvelope /> info@s2mortgage.com
+          <FaEnvelope /> nicole@s2mortgage.com
         </p>
       </div>
       <div className="footer-privacy">

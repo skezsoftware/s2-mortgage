@@ -5,6 +5,7 @@ import "./contact.css";
 export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -17,13 +18,14 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, phone, message }),
       });
       const data = await res.json();
       if (res.ok) {
         setStatus({ type: "success", message: data.message });
         setName("");
         setEmail("");
+        setPhone("");
         setMessage("");
       } else {
         setStatus({
@@ -74,6 +76,15 @@ export default function ContactPage() {
             placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            className="contact-input"
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             required
           />
           <textarea
