@@ -53,14 +53,43 @@
 /** GRID & CARDS **/
 .servicesGrid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2.5rem;
   max-width: 1100px;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto;
   padding: 2.5rem 1.5rem 0 1.5rem;
 }
 
+.stagesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  padding: 1.5rem;
+  position: relative;
+  background-image: url('/inside_home.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.stagesGrid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.12);
+  z-index: 2;
+}
+
 .stagesCard {
+  position: relative;
+  z-index: 3;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(28,37,65,0.10);
@@ -74,9 +103,46 @@
   min-height: 220px;
   border: 1.5px solid #e0e6f0;
   transition: box-shadow 0.2s, transform 0.2s;
-  max-width: 1100px;
-  margin: 0 auto 3rem auto;
+  align-items: flex-start;
+  text-align: center;
 }
+
+.stageNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1c2541;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  align-self: center;
+}
+
+.stageContent h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #1c2541;
+}
+
+.stageContent h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  margin-top: 0.7rem;
+  color: #1c2541;
+}
+
+.stageContent p {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #1c2541;
+}
+
+.emptyCard {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 .serviceCard {
   background: var(--primary);
   border-radius: 18px;
@@ -158,6 +224,12 @@
     gap: 1.5rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
   }
+  .stagesGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
 }
 @media (max-width: 600px) {
   .heroSection {
@@ -186,7 +258,7 @@
     margin-bottom: 0.5rem;
   }
   .stagesCard h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -219,5 +291,11 @@
     padding: 0.6rem 0.5rem;
     border-radius: 10px;
     max-width: 100%;
+  }
+  .stagesGrid {
+    background-image: url('/inside_home_phone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

@@ -23,24 +23,32 @@
   margin-top: 1.5rem;
 }
 
-.card {
+.bio-card {
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 450px;
-  background: #eaf3fb;
+  background: var(--primary);
+  color: #fff;
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(28, 37, 65, 0.16);
   border: 1.5px solid #e0e6f0;
   padding: 1.8rem 1.4rem;
   flex: 1 1 250px;
   min-width: 220px;
-  max-width: 340px;
+  max-width: 440px;
   text-align: left;
   transition: box-shadow 0.2s, transform 0.2s;
+  height: auto; /* Allow card height to grow */
+  overflow: visible; /* Ensure full text is shown */
+  word-wrap: break-word;
 }
 
-.card:hover {
+.bio-card p {
+  margin-bottom: 15px;
+}
+
+.bio-card:hover {
   box-shadow: 0 16px 48px rgba(75, 140, 255, 0.18);
   transform: translateY(-4px) scale(1.025);
   border-color: var(--primary);
@@ -54,6 +62,7 @@
   margin: 0 auto;
   font-weight: 500;
   text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+  margin-bottom: 15px;
 }
 
 .team-image {
@@ -67,23 +76,24 @@
 .credentials {
   margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--accent);
+  color: #fff;
 }
 
-.credentials p {
+/* .credentials p {
   margin-bottom: 0.5rem;
   font-size: 0.98rem;
   color: var(--primary);
-}
+} */
 
-.card h3 {
-  color: var(--primary);
+.bio-card h3 {
+  color: #fff;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.card h4 {
+.bio-card h4 {
   color: var(--accent);
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -133,15 +143,25 @@
     font-size: 1.08rem;
     padding: 0 1rem;
   }
-  .card {
+  .bio-card {
     padding: 1.2rem 1rem;
-    min-height: 500px;
+    height: auto;
+    overflow: visible;
+    word-wrap: break-word;
+    min-height: unset;
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+    
   }
   .cards {
+    width: 100%;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    height: auto;
+    overflow: visible;
   }
   .section h1, .section h2 {
     font-size: 2rem;
