@@ -240,3 +240,212 @@
   }
 }
 
+/* Header Section */
+.servicesHeaderSection {
+  background: #fff;
+  padding: 2.5rem 0 1.5rem 0;
+}
+.servicesHeaderTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.servicesHeaderSubtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.18rem;
+  color: #222;
+  font-weight: 400;
+}
+
+/* What We Offer Section */
+.servicesDarkSection {
+  background: #3b4a5e;
+  padding: 2.5rem 0 2.5rem 0;
+}
+.servicesDarkTitle {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.servicesVerticalCards {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Homebuyers Section */
+.servicesHomebuyersSection {
+  background: var(--primary);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--highlight);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.servicesHomebuyersTitle {
+  color: var(--highlight);
+  border-bottom: 1px solid var(--highlight);
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.servicesHomebuyersGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.servicesHomebuyersGridRow {
+  max-width: 800px;
+  margin: 2.5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Refinance Section */
+.servicesRefinanceSection {
+  background: var(--primary);
+  padding: 2.5rem 0 2.5rem 0;
+  border-bottom: 1px solid var(--highlight);
+  border-top: 1px solid var(--highlight);
+  margin-bottom: 2.5rem;
+}
+.servicesRefinanceTitle {
+  color: var(--highlight);
+  border-bottom: 1px solid var(--highlight);
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.servicesRefinanceGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.servicesRefinanceGridRow {
+  max-width: 1100px;
+  margin: 2.5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Card Image Styling */
+.servicesCardImage {
+  border-radius: 12px;
+  margin-bottom: 18px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card Base Styles */
+.serviceCard,
+.serviceCard-2 {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(28, 37, 65, 0.1);
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary);
+  font-size: 1.08rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 220px;
+  border: 1.5px solid #e0e6f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+  align-items: flex-start;
+}
+.serviceCard h3,
+.serviceCard-2 h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1.1rem;
+  border-bottom: 2px solid #e0e6f0;
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.serviceCard-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.1rem 0.7rem;
+  margin-left: 1.2rem;
+  padding: 0;
+  list-style: disc;
+  font-size: 1.09rem;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .servicesHomebuyersGrid {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 900px) {
+  .servicesHomebuyersGrid,
+  .servicesRefinanceGrid,
+  .servicesRefinanceGridRow {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+  }
+  .servicesHomebuyersGridRow {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  .servicesHeaderTitle {
+    font-size: 1.7rem;
+  }
+  .servicesDarkTitle,
+  .servicesHomebuyersTitle,
+  .servicesRefinanceTitle {
+    font-size: 1.2rem;
+  }
+  .servicesVerticalCards {
+    gap: 1.2rem;
+  }
+  .servicesHomebuyersGrid,
+  .servicesHomebuyersGridRow,
+  .servicesRefinanceGrid,
+  .servicesRefinanceGridRow {
+    gap: 1.2rem;
+    padding: 0 0.2rem;
+  }
+  .serviceCard,
+  .serviceCard-2 {
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+    font-size: 0.98rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .serviceCard h3,
+  .serviceCard-2 h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+}
+
