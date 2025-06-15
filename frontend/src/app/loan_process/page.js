@@ -21,7 +21,7 @@ export default function LoanProcess() {
       </section>
 
       {/* Loan Process Steps */}
-      <div className="stagesCard" style={{ textAlign: "left" }}>
+      <div className="stagesCard" style={{ textAlign: "left", margin: "0 auto", maxWidth: "1100px", marginBottom: "2.5rem", marginTop: "2.5rem"}}>
         <h1>The Stages of a Home Loan</h1>
         <h2>For Home Buyers</h2>
         <p>

@@ -23,7 +23,7 @@ const cardData = [
     title: "Prequalification Services",
     description:
       "Our detailed prequalification services will give you insight into your home buying power. Understanding your options helps streamline the home buying process and gives you a competitive edge.",
-    backgroundImage: "/office_marble.jpg",
+    backgroundImage: "/home_sweet_home.png",
   },
   {
     title: "Contract Loan Processing",
@@ -117,7 +117,9 @@ export default function Home() {
       </div>
 
       {/* What We Offer Section */}
-      <h2 className="whatWeOfferH2">What We Offer</h2>
+      <div className="whatWeOfferTitle">
+        <h2>What We Offer</h2>
+      </div>
       <section className="section">
         <div className={styles.cards + " " + styles.whatWeOfferCards}>
           {cardData.map((card, idx) => (

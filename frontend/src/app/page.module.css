@@ -78,7 +78,11 @@
   align-items: stretch;
 }
 
-.whatWeOfferH2 {
+.whatWeOfferTitle h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 .section h2 {

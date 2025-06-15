@@ -5,14 +5,14 @@
     padding: 2.5rem 1rem 2.5rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.7rem;
     font-size: 1.08rem;
 }
