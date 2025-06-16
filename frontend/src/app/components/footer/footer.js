@@ -16,9 +16,9 @@ export default function Footer() {
           <FaEnvelope /> nicole@s2mortgage.com
         </p>
       </div>
-      <div className="footer-privacy">
+      {/* <div className="footer-privacy">
         Privacy Policy | Terms of Service
-      </div>
+      </div> */}
     </footer>
   );
 }

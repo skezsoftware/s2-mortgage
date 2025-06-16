@@ -2,10 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import "./globals.css";
 import {
-  FaHouse,
-  FaClipboardCheck,
-  FaFileSignature,
-  FaPeopleGroup,
   FaAward,
   FaLocationDot,
   FaUserCheck,
@@ -117,7 +113,7 @@ export default function Home() {
       </div>
 
       {/* What We Offer Section */}
-      <div className="whatWeOfferTitle">
+      <div className={styles.whatWeOfferTitle}>
         <h2>What We Offer</h2>
       </div>
       <section className="section">
