@@ -16,22 +16,22 @@ const cardData = [
     backgroundImage: "/home_mortgage_loans.jpg",
   },
   {
-    title: "Prequalification Services",
+    title: "Pre-Approval Services",
     description:
-      "Our detailed prequalification services will give you insight into your home buying power. Understanding your options helps streamline the home buying process and gives you a competitive edge.",
+      "Our detailed pre-approval services will give you insight into your home buying power. Understanding your options helps streamline the home buying process and gives you a competitive edge.",
     backgroundImage: "/home_sweet_home.png",
-  },
-  {
-    title: "Contract Loan Processing",
-    description:
-      "Our experienced team provides efficient and reliable contract loan processing services, ensuring loan originators are able to maximize productivity without incurring processing payroll expenses.",
-    backgroundImage: "/office_marble.jpg",
   },
   {
     title: "Serving Those Who Serve",
     description:
       "We take great pride in serving those who've served our nation—offering VA loans to U.S. Veterans and Surviving Spouses, with the exceptional care and commitment you deserve.",
     backgroundImage: "/flags.jpg",
+  },
+  {
+    title: "Contract Loan Processing",
+    description:
+      "Our experienced team provides efficient and reliable contract loan processing services, ensuring loan originators are able to maximize productivity without incurring processing payroll expenses.",
+    backgroundImage: "/office_marble.jpg",
   },
 ];
 

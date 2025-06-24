@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <section className="section about-section">
-        <h1>About S2 Mortgage, and our Commitment to Excellence</h1>
+        <h1>About S2 Mortgage<br />And Our Commitment To Excellence</h1>
         <p className="business-description">
           At S2 Mortgage, we&apos;re more than just a mortgage brokerage—we&apos;re your
           dedicated partner in the home financing journey. Whether you&apos;re buying

@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container">
         <Link href="/" className="navbar-brand">
           <Image
-            src="/small_logo.png"
+            src="/s2_mortgage.png"
             alt="S2 Mortgage Logo"
             width={250}
             height={250}
@@ -87,6 +87,13 @@ export default function Header() {
                 Contact
               </Link>
             </li>
+            <button className="nav-item-button">
+              <a
+                href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+              >
+                Apply Now
+              </a>
+            </button>
           </ul>
         </div>
       </div>
