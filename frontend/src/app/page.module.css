@@ -242,6 +242,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  justify-items: center;
 }
 
 /* Why Choose Us Section: background and no boxes */
@@ -285,17 +286,20 @@
     padding: 1.2rem 0.7rem;
     /* margin-top: 22em; */
   }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 90%;
-  }
   .section {
     padding: 1.2rem 0.5rem;
   }
   .homeHeroContent h1 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
   }
 }
 

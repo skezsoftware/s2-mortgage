@@ -315,7 +315,7 @@
 /* Refinance Section */
 .servicesRefinanceSection {
   background: var(--primary);
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 1.5rem;
   border-bottom: 1px solid var(--highlight);
   border-top: 1px solid var(--highlight);
   margin-bottom: 2.5rem;
@@ -370,6 +370,9 @@
   border: 1.5px solid #e0e6f0;
   transition: box-shadow 0.2s, transform 0.2s;
   align-items: flex-start;
+  max-width: 900px;
+  margin: auto;
+  height: 100%;
 }
 .serviceCard h3,
 .serviceCard-2 h3 {

@@ -159,8 +159,6 @@ export default function Services() {
             </p>
             <p>You&apos;ve served our country—now let us serve you.</p>
           </div>
-        </div>
-        <div className="servicesHomebuyersGridRow">
           <div className="serviceCard">
             <Image
               src="/vacation.png"
