@@ -305,7 +305,7 @@
 
 @media screen and (max-width: 1024px) {
   .homepage {
-    background-image: url('/phone.png');
+    background-image: url('/phone_2.png');
     background-position: top;
     min-height: 400px;
     width: 100%;
