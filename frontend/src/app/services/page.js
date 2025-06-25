@@ -82,7 +82,7 @@ export default function Services() {
           Serving the Needs of All Homebuyers
         </h2>
         <div className="servicesHomebuyersGrid">
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <Image
               src="/first_time.png"
               alt="First-Time Homebuyers"
@@ -120,7 +120,7 @@ export default function Services() {
               ensure your first home-buying experience is smooth and rewarding!
             </p>
           </div>
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <Image
               src="/sale.png"
               alt="Selling and Buying"
@@ -142,7 +142,7 @@ export default function Services() {
             </p>
             <p>Let&apos;s make your transition smooth and rewarding!</p>
           </div>
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <Image
               src="/veterans.png"
               alt="Veterans & Surviving Spouses"
@@ -159,7 +159,7 @@ export default function Services() {
             </p>
             <p>You&apos;ve served our country—now let us serve you.</p>
           </div>
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <Image
               src="/vacation.png"
               alt="Second/Vacation Homes"
@@ -181,7 +181,7 @@ export default function Services() {
               Let&apos;s make your vision a reality!
             </p>
           </div>
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <Image
               src="/investors.png"
               alt="Investors"
@@ -225,7 +225,7 @@ export default function Services() {
             <p>These products offer financial flexibility and can help you achieve your goals.</p>
             <p>Contact us today to review the several product options available that offer financial flexibility and can help you achieve your goals.</p>
           </div> */}
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <h3>Reduce Your Rate and Save Money</h3>
             <p>
               A rate/term refinance involves replacing your current mortgage
@@ -248,7 +248,7 @@ export default function Services() {
           </div>
 
           {/* <div className="servicesRefinanceGridRow"> */}
-          <div className="serviceCard">
+          <div className="serviceCard-3">
             <h3>Why Consider a Cash-Out Refinance or Home Equity Loan</h3>
             <p>
               A cash-out refinance allows you to access your home&apos;s equity
