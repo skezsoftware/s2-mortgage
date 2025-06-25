@@ -126,12 +126,12 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(28, 37, 65, 0.1);
 }
-.serviceCard:hover {
+.serviceCard-3:hover {
   box-shadow: 0 16px 48px rgba(75, 140, 255, 0.13);
   transform: translateY(-4px) scale(1.025);
   border-color: var(--primary);
 }
-.serviceCard h3 {
+.serviceCard-3 h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary);
@@ -230,7 +230,7 @@
   .heroContent h1 {
     font-size: 1.5rem;
   }
-  .serviceCard {
+  .serviceCard-3 {
     padding: 1.2rem 0.8rem 1rem 0.8rem;
     font-size: 0.98rem;
   }
@@ -374,7 +374,7 @@
   margin: auto;
   height: 100%;
 }
-.serviceCard h3,
+.serviceCard-3 h3,
 .serviceCard-2 h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -437,14 +437,14 @@
     gap: 1.2rem;
     padding: 0 0.2rem;
   }
-  .serviceCard,
+  .serviceCard-3,
   .serviceCard-2 {
     padding: 1.2rem 0.8rem 1rem 0.8rem;
     font-size: 0.98rem;
     border-radius: 10px;
     margin-bottom: 1.5rem;
   }
-  .serviceCard h3,
+  .serviceCard-3 h3,
   .serviceCard-2 h3 {
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
