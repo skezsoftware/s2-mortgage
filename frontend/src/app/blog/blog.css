@@ -29,7 +29,7 @@
   z-index: 3;
   width: fit-content;
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,13 +56,14 @@
   
 }
 
-.blog-hero-content h1 {
+.blog-hero-content-h1 {
   font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #fff;
+  color: #fff !important;
   border-bottom: 2px solid #fff;
   padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
   text-shadow: 0 2px 12px rgba(28,37,65,0.25);
 }
 

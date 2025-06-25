@@ -24,7 +24,7 @@ export default async function BlogPage() {
           />
           <div className="blog-hero-overlay"></div>
           <div className="blog-hero-content">
-            <h1>Blog</h1>
+            <h1 className="blog-hero-content-h1">Blog</h1>
           </div>
         </div>
         <div className="blog-info-section">
