@@ -5,13 +5,17 @@ import "./services.css";
 
 export default function Services() {
   return (
-    <>
+    <main>
       {/* Hero Section */}
-      <section className="heroSection">
-        <div className="heroOverlay"></div>
+      <section 
+        className="heroSection" 
+        role="banner" 
+        aria-label="Services hero banner"
+      >
+        <div className="heroOverlay" aria-hidden="true"></div>
         <Image
           src="/family_beach.png"
-          alt="Family at the beach"
+          alt="Family enjoying time at the beach"
           fill
           className="heroImage"
           priority
@@ -22,8 +26,12 @@ export default function Services() {
       </section>
 
       {/* Section 1: Header */}
-      <section className="servicesHeaderSection">
-        <h1 className="servicesHeaderTitle">
+      <section 
+        className="servicesHeaderSection" 
+        role="region" 
+        aria-labelledby="services-header-title"
+      >
+        <h1 id="services-header-title" className="servicesHeaderTitle">
           Our Full Range of Mortgage Services
         </h1>
         <p className="servicesHeaderSubtitle">
@@ -36,10 +44,14 @@ export default function Services() {
       </section>
 
       {/* Section 2: What We Offer */}
-      <section className="servicesDarkSection">
-        <h2 className="servicesDarkTitle">What We Offer</h2>
-        <div className="servicesVerticalCards">
-          <div className="serviceCard-2">
+      <section 
+        className="servicesDarkSection" 
+        role="region" 
+        aria-labelledby="what-we-offer-title"
+      >
+        <h2 id="what-we-offer-title" className="servicesDarkTitle">What We Offer</h2>
+        <div className="servicesVerticalCards" role="list">
+          <article className="serviceCard-2" role="listitem">
             <h3>Pre-Approval Services</h3>
             <p>
               Understanding your financial readiness before starting your home
@@ -49,8 +61,8 @@ export default function Services() {
               realistic budget and strengthen your position as a competitive
               buyer.
             </p>
-          </div>
-          <div className="serviceCard-2">
+          </article>
+          <article className="serviceCard-2" role="listitem">
             <h3>Mortgage Loans</h3>
             <p>
               Navigating the world of mortgage loans can be complex, but with S2
@@ -61,8 +73,8 @@ export default function Services() {
               the best loan product and ensure you secure the most favorable
               terms and rates.
             </p>
-          </div>
-          <div className="serviceCard-2">
+          </article>
+          <article className="serviceCard-2" role="listitem">
             <h3>Contract Loan Processing</h3>
             <p>
               Efficiency and accuracy are critical to successful loan
@@ -72,20 +84,24 @@ export default function Services() {
               submission and follow-ups, we manage every detail to expedite the
               approval process and keep you informed.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
       {/* Section 3: Serving the Needs of All Homebuyers */}
-      <section className="servicesHomebuyersSection">
-        <h2 className="servicesHomebuyersTitle">
+      <section 
+        className="servicesHomebuyersSection" 
+        role="region" 
+        aria-labelledby="homebuyers-title"
+      >
+        <h2 id="homebuyers-title" className="servicesHomebuyersTitle">
           Serving the Needs of All Homebuyers
         </h2>
-        <div className="servicesHomebuyersGrid">
-          <div className="serviceCard-3">
+        <div className="servicesHomebuyersGrid" role="list">
+          <article className="serviceCard-3" role="listitem">
             <Image
               src="/first_time.png"
-              alt="First-Time Homebuyers"
+              alt="First-time homebuyers exploring their options"
               width={320}
               height={180}
               className="servicesCardImage"
@@ -95,35 +111,37 @@ export default function Services() {
               Congratulations on taking the first step toward homeownership!
               Owning a home offers many benefits:
             </p>
-            <p>
-              <strong>Build Equity:</strong> Every mortgage payment helps you
-              build equity instead of paying rent with no return.
-            </p>
-            <p>
-              <strong>Stability:</strong> Enjoy stability and security without
-              the uncertainty of rental agreements.
-            </p>
-            <p>
-              <strong>Personalization:</strong> Customize your home to fit your
-              style and needs.
-            </p>
-            <p>
-              <strong>Tax Benefits:</strong> Potential tax advantages, like
-              deductions for mortgage interest and property taxes.
-            </p>
-            <p>
-              <strong>Community:</strong> Buying a home helps you establish
-              roots and connect with your community.
-            </p>
+            <ul>
+              <li>
+                <strong>Build Equity:</strong> Every mortgage payment helps you
+                build equity instead of paying rent with no return.
+              </li>
+              <li>
+                <strong>Stability:</strong> Enjoy stability and security without
+                the uncertainty of rental agreements.
+              </li>
+              <li>
+                <strong>Personalization:</strong> Customize your home to fit your
+                style and needs.
+              </li>
+              <li>
+                <strong>Tax Benefits:</strong> Potential tax advantages, like
+                deductions for mortgage interest and property taxes.
+              </li>
+              <li>
+                <strong>Community:</strong> Buying a home helps you establish
+                roots and connect with your community.
+              </li>
+            </ul>
             <p>
               We&apos;re here to guide you through this exciting journey and
               ensure your first home-buying experience is smooth and rewarding!
             </p>
-          </div>
-          <div className="serviceCard-3">
+          </article>
+          <article className="serviceCard-3" role="listitem">
             <Image
               src="/sale.png"
-              alt="Selling and Buying"
+              alt="Selling and buying homes transition"
               width={320}
               height={180}
               className="servicesCardImage"
@@ -141,11 +159,11 @@ export default function Services() {
               to find your next dream home.
             </p>
             <p>Let&apos;s make your transition smooth and rewarding!</p>
-          </div>
-          <div className="serviceCard-3">
+          </article>
+          <article className="serviceCard-3" role="listitem">
             <Image
               src="/veterans.png"
-              alt="Veterans & Surviving Spouses"
+              alt="Veterans and surviving spouses mortgage services"
               width={320}
               height={180}
               className="servicesCardImage"
@@ -158,11 +176,11 @@ export default function Services() {
               homeownership is more accessible and affordable.
             </p>
             <p>You&apos;ve served our country—now let us serve you.</p>
-          </div>
-          <div className="serviceCard-3">
+          </article>
+          <article className="serviceCard-3" role="listitem">
             <Image
               src="/vacation.png"
-              alt="Second/Vacation Homes"
+              alt="Second home and vacation property financing"
               width={320}
               height={180}
               className="servicesCardImage"
@@ -180,11 +198,11 @@ export default function Services() {
               potential to make your second home a rewarding investment.
               Let&apos;s make your vision a reality!
             </p>
-          </div>
-          <div className="serviceCard-3">
+          </article>
+          <article className="serviceCard-3" role="listitem">
             <Image
               src="/investors.png"
-              alt="Investors"
+              alt="Real estate investment financing options"
               width={320}
               height={180}
               className="servicesCardImage"
@@ -203,29 +221,21 @@ export default function Services() {
               recommend the best financing strategies. Let&apos;s create a plan
               to maximize your investment opportunities.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
       {/* Section 4: Refinancing Solutions for Your Home */}
-      <section className="servicesRefinanceSection">
-        <h2 className="servicesRefinanceTitle">
+      <section 
+        className="servicesRefinanceSection" 
+        role="region" 
+        aria-labelledby="refinance-title"
+      >
+        <h2 id="refinance-title" className="servicesRefinanceTitle">
           Refinancing Solutions for Your Home
         </h2>
-        <div className="servicesRefinanceGrid">
-          {/* <div className="serviceCard">
-            <h3>Our Cashout Options</h3>
-            <ul className="serviceCard-list">
-              <li>VA</li>
-              <li>FHA</li>
-              <li>Conventional</li>
-              <li>Lines of Credit</li>
-            </ul>
-            <p>Additional Products are available for self-employed borrowers, investors, and those borrowers needing alternative lending solutions</p>
-            <p>These products offer financial flexibility and can help you achieve your goals.</p>
-            <p>Contact us today to review the several product options available that offer financial flexibility and can help you achieve your goals.</p>
-          </div> */}
-          <div className="serviceCard-3">
+        <div className="servicesRefinanceGrid" role="list">
+          <article className="serviceCard-3" role="listitem">
             <h3>Reduce Your Rate and Save Money</h3>
             <p>
               A rate/term refinance involves replacing your current mortgage
@@ -245,10 +255,9 @@ export default function Services() {
               requiring an appraisal or income documentation, saving you
               additional time and money.
             </p>
-          </div>
+          </article>
 
-          {/* <div className="servicesRefinanceGridRow"> */}
-          <div className="serviceCard-3">
+          <article className="serviceCard-3" role="listitem">
             <h3>Why Consider a Cash-Out Refinance or Home Equity Loan</h3>
             <p>
               A cash-out refinance allows you to access your home&apos;s equity
@@ -270,10 +279,9 @@ export default function Services() {
               that offer financial flexibility and can help you achieve your
               goals.
             </p>
-          </div>
+          </article>
         </div>
-        {/* </div> */}
       </section>
-    </>
+    </main>
   );
 }

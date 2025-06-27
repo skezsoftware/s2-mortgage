@@ -1,4 +1,4 @@
-/** HERO SECTION **/
+* HERO SECTION *
 .section.blog-hero-section {
   max-width: 1200px;
   margin: 2.5rem auto 2.5rem auto;
@@ -53,7 +53,7 @@
   justify-content: center;
   height: 100%;
   font-size: 1.2rem;
-  
+  margin-bottom: 0;
 }
 
 .blog-hero-content-h1 {
