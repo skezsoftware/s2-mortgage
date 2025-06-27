@@ -6,26 +6,30 @@ export default function About() {
   return (
     <>
       <section className="section about-section">
-        <h1>About S2 Mortgage<br />And Our Commitment To Excellence</h1>
+        <h1>
+          About S2 Mortgage
+          <br />
+          And Our Commitment To Excellence
+        </h1>
         <p className="business-description">
-          At S2 Mortgage, we&apos;re more than just a mortgage brokerage—we&apos;re your
-          dedicated partner in the home financing journey. Whether you&apos;re buying
-          your first home, refinancing, upgrading to your next property, or
-          exploring investment opportunities, we&apos;re here to guide you every step
-          of the way.
+          At S2 Mortgage, we&apos;re more than just a mortgage
+          brokerage—we&apos;re your dedicated partner in the home financing
+          journey. Whether you&apos;re buying your first home, refinancing,
+          upgrading to your next property, or exploring investment
+          opportunities, we&apos;re here to guide you every step of the way.
         </p>
         <p className="business-description">
           We specialize in residential mortgages and offer personalized,
           one-on-one support tailored to your unique goals. Our experienced team
           combines deep industry knowledge with a true passion for helping
-          clients succeed—so you can feel confident you&apos;re getting the right
-          solution for your needs.
+          clients succeed—so you can feel confident you&apos;re getting the
+          right solution for your needs.
         </p>
         <p className="business-description">
-          We&apos;re committed to building long-term relationships, not just closing
-          loans. With outstanding service and smart solutions, our goal is to
-          become your go-to resource—not just for today, but for every stage of
-          your life, and for your family, friends, and colleagues too.
+          We&apos;re committed to building long-term relationships, not just
+          closing loans. With outstanding service and smart solutions, our goal
+          is to become your go-to resource—not just for today, but for every
+          stage of your life, and for your family, friends, and colleagues too.
         </p>
         <p className="business-description">
           Let us help make your homeownership dreams a reality—with expert
@@ -36,8 +40,8 @@ export default function About() {
 
       <section className="section team-section">
         <h2>Meet Our Team</h2>
-        <div className="cards">
-          <div className="bio-card">
+        <div className="cards" aria-label="Team member list">
+          <article className="bio-card">
             <Image
               src="/nicole.png"
               width={200}
@@ -52,30 +56,31 @@ export default function About() {
               still love helping people turn their homeownership dreams into
               reality. My experience spans from processing and loan origination
               to being the Broker/ Owner of S2 Mortgage, providing me with a
-              comprehensive understanding of the industry. Over the years, I&apos;ve
-              worked with all kinds of clients—and I pride myself on making the
-              mortgage process simple, clear, and as stress-free as possible.
+              comprehensive understanding of the industry. Over the years,
+              I&apos;ve worked with all kinds of clients—and I pride myself on
+              making the mortgage process simple, clear, and as stress-free as
+              possible.
             </p>
             <p>
               What keeps me motivated is my commitment to excellence and being
               of true service. I believe every client deserves personalized
-              attention and honest guidance. I&apos;m here to listen, answer your
-              questions, and find the best mortgage options tailored just for
-              you.
+              attention and honest guidance. I&apos;m here to listen, answer
+              your questions, and find the best mortgage options tailored just
+              for you.
             </p>
             <p>
               When you work with me, you&apos;re not just getting a mortgage
-              broker—you&apos;re getting a trusted partner who&apos;s got your back from
-              start to finish.
+              broker—you&apos;re getting a trusted partner who&apos;s got your
+              back from start to finish.
             </p>
             <p>Contact me today via email: nicole@s2mortgage.com</p>
-            <div className="credentials">
+            <div className="credentials" aria-label="Licensing information">
               <p>DRE License#: 01872714</p>
               <p>NMLS#: 2583860</p>
             </div>
-          </div>
+          </article>
 
-          <div className="bio-card">
+          <article className="bio-card">
             <Image
               src="/glenn.jpeg"
               width={200}
@@ -103,20 +108,21 @@ export default function About() {
             </p>
             <p>
               I believe in building lasting partnerships based on trust, clear
-              communication, and shared success. Whether you&apos;re a first-time
-              buyer, looking to refinance, or a real estate professional seeking
-              a reliable lending partner—I&apos;m here to help.
+              communication, and shared success. Whether you&apos;re a
+              first-time buyer, looking to refinance, or a real estate
+              professional seeking a reliable lending partner—I&apos;m here to
+              help.
             </p>
             <p>
-              I&apos;m proud to serve my community now in a new way, helping others
-              make smart, confident decisions about home financing.
+              I&apos;m proud to serve my community now in a new way, helping
+              others make smart, confident decisions about home financing.
             </p>
             <p>Contact me today via email: glenn@s2mortgage.com</p>
-            <div className="credentials">
+            <div className="credentials" aria-label="Licensing information">
               <p>DRE License#: 01415271</p>
               <p>NMLS#: 2278633</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
     </>

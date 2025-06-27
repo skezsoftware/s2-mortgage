@@ -19,6 +19,7 @@ export default function Header() {
             width={250}
             height={250}
             className="logo"
+            aria-label="Go to home page"
           />
         </Link>
 
