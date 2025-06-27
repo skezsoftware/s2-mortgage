@@ -102,14 +102,12 @@ export default function Home() {
           are confident that we have the perfect solution to your unique home
           loan needs.
         </p>
-        <button className={styles.heroButton}>
-          <a
-            href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Get Started Now
-          </a>
-        </button>
+        <a
+          href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+          className={styles.heroButton}
+        >
+          Get Started Now
+        </a>
       </div>
 
       {/* What We Offer Section */}
@@ -152,7 +150,9 @@ export default function Home() {
         <div className={styles.exploreServicesCard}>
           <h2 className={styles.exploreServicesTitle}>Explore Our Services</h2>
           <p className={styles.exploreServicesSubtitle}>
-            Start your journey with S2 Mortgage, and let us help you achieve your home financing goals. Discover our full range of services and find the one that aligns with your needs.
+            Start your journey with S2 Mortgage, and let us help you achieve
+            your home financing goals. Discover our full range of services and
+            find the one that aligns with your needs.
           </p>
           <a href="/services" className={styles.exploreServicesButton}>
             Explore Our Services

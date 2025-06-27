@@ -190,9 +190,9 @@
 }
 
 .button {
-  background: var(--accent);
-  color: #fff;
-  border: 1.5px solid var(--primary);
+  background: var(--highlight);
+  color: var(--primary);
+  border: 1.5px solid var(--accent);
   border-radius: 18px;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -209,16 +209,18 @@
   align-items: center;
   justify-content: center; 
   margin-top: 1rem;
+  min-width: 48px;
+  min-height: 48px;
 }
 
-.button-link {
+/* .button-link {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
-}
+} */
 
 /** RESPONSIVE **/
 @media (max-width: 900px) {

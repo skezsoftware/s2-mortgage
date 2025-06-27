@@ -139,15 +139,13 @@ export default function LoanProcess() {
           <p>
             Contact us today to get started on your journey to homeownership!
           </p>
-          <button className="button">
-            <a
-              href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
-              style={{ textDecoration: "none" }}
-              className="button-link"
-            >
-              Get Started Now
-            </a>
-          </button>
+          <a
+            href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+            className="button"
+            role="button"
+          >
+            Get Started Now
+          </a>
         </div>
       </div>
     </>

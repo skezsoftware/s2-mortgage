@@ -98,7 +98,7 @@ export default function ContactPage() {
             maxLength={500}
           />
           <div
-            style={{ textAlign: "right", fontSize: "0.95rem", color: "#888" }}
+            style={{ textAlign: "right", fontSize: "0.95rem", color: "var(--primary)" }}
           >
             {message.length} / 500 characters
           </div>

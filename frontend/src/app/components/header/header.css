@@ -55,24 +55,18 @@
 
 .nav-item-button {
   background-color: var(--primary);
-  padding: 0.5rem 1rem;
+  padding: .7rem;
   margin: 0 0.2rem;
   font-size: 1rem;
   border-radius: 10px;
-}
-
-.nav-item-button a {
   color: var(--background);
   text-decoration: none;
   font-family: 'Lora', serif;
 }
 
-
 .nav-link-active {
   border: 2px solid var(--primary);
   border-radius: 10px;
-  /* padding: 0.5rem 1rem !important;
-  margin: 0 0.2rem; */
   position: relative;
   transition: color 0.3s ease;
 }

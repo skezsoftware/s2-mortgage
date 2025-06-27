@@ -65,8 +65,8 @@
 }
 
 .contact-button {
-  background: var(--accent);
-  color: #fff;
+  background: var(--primary);
+  color: var(--background);
   padding: 1rem;
   border: none;
   border-radius: 8px;
