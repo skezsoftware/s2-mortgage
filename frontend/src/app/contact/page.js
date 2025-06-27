@@ -46,7 +46,7 @@ export default function ContactPage() {
   return (
     <>
     <main>
-      <header className="contact-hero-section" role="region" aria-labelledby="contact-hero-title">
+      <header className="contact-hero-section" aria-labelledby="contact-hero-title">
         <h1 id="contact-hero-title">We&apos;d Love to Hear From You!</h1>
         <p>
           Whether you&apos;re interested in working together, have questions about
@@ -55,7 +55,7 @@ export default function ContactPage() {
           Let&apos;s connect and see how we can help you achieve your goals!
         </p>
       </header>
-      <section className="contact-form-section" role="region" aria-labelledby="contact-form-title">
+      <section className="contact-form-section" aria-labelledby="contact-form-title">
         <form
           className="contact-form"
           onSubmit={handleSubmit}

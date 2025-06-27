@@ -27,8 +27,7 @@ export default function Services() {
 
       {/* Section 1: Header */}
       <header 
-        className="servicesHeaderSection" 
-        role="region" 
+        className="servicesHeaderSection"  
         aria-labelledby="services-header-title"
       >
         <h1 id="services-header-title" className="servicesHeaderTitle">
@@ -46,12 +45,11 @@ export default function Services() {
       {/* Section 2: What We Offer */}
       <section 
         className="servicesDarkSection" 
-        role="region" 
         aria-labelledby="what-we-offer-title"
       >
         <h2 id="what-we-offer-title" className="servicesDarkTitle">What We Offer</h2>
-        <div className="servicesVerticalCards" role="list">
-          <article className="serviceCard-2" role="listitem">
+        <div className="servicesVerticalCards">
+          <article className="serviceCard-2">
             <h3>Pre-Approval Services</h3>
             <p>
               Understanding your financial readiness before starting your home
@@ -62,7 +60,7 @@ export default function Services() {
               buyer.
             </p>
           </article>
-          <article className="serviceCard-2" role="listitem">
+          <article className="serviceCard-2">
             <h3>Mortgage Loans</h3>
             <p>
               Navigating the world of mortgage loans can be complex, but with S2
@@ -74,7 +72,7 @@ export default function Services() {
               terms and rates.
             </p>
           </article>
-          <article className="serviceCard-2" role="listitem">
+          <article className="serviceCard-2">
             <h3>Contract Loan Processing</h3>
             <p>
               Efficiency and accuracy are critical to successful loan
@@ -91,14 +89,13 @@ export default function Services() {
       {/* Section 3: Serving the Needs of All Homebuyers */}
       <section 
         className="servicesHomebuyersSection" 
-        role="region" 
         aria-labelledby="homebuyers-title"
       >
         <h2 id="homebuyers-title" className="servicesHomebuyersTitle">
           Serving the Needs of All Homebuyers
         </h2>
-        <div className="servicesHomebuyersGrid" role="list">
-          <article className="serviceCard-3" role="listitem">
+        <div className="servicesHomebuyersGrid">
+          <article className="serviceCard-3">
             <Image
               src="/first_time.png"
               alt="First-time homebuyers exploring their options"
@@ -138,7 +135,7 @@ export default function Services() {
               ensure your first home-buying experience is smooth and rewarding!
             </p>
           </article>
-          <article className="serviceCard-3" role="listitem">
+          <article className="serviceCard-3">
             <Image
               src="/sale.png"
               alt="Selling and buying homes transition"
@@ -160,7 +157,7 @@ export default function Services() {
             </p>
             <p>Let&apos;s make your transition smooth and rewarding!</p>
           </article>
-          <article className="serviceCard-3" role="listitem">
+          <article className="serviceCard-3">
             <Image
               src="/veterans.png"
               alt="Veterans and surviving spouses mortgage services"
@@ -177,7 +174,7 @@ export default function Services() {
             </p>
             <p>You&apos;ve served our country—now let us serve you.</p>
           </article>
-          <article className="serviceCard-3" role="listitem">
+          <article className="serviceCard-3">
             <Image
               src="/vacation.png"
               alt="Second home and vacation property financing"
@@ -199,7 +196,7 @@ export default function Services() {
               Let&apos;s make your vision a reality!
             </p>
           </article>
-          <article className="serviceCard-3" role="listitem">
+          <article className="serviceCard-3">
             <Image
               src="/investors.png"
               alt="Real estate investment financing options"
@@ -228,14 +225,13 @@ export default function Services() {
       {/* Section 4: Refinancing Solutions for Your Home */}
       <section 
         className="servicesRefinanceSection" 
-        role="region" 
         aria-labelledby="refinance-title"
       >
         <h2 id="refinance-title" className="servicesRefinanceTitle">
           Refinancing Solutions for Your Home
         </h2>
-        <div className="servicesRefinanceGrid" role="list">
-          <article className="serviceCard-3" role="listitem">
+        <div className="servicesRefinanceGrid">
+          <article className="serviceCard-3">
             <h3>Reduce Your Rate and Save Money</h3>
             <p>
               A rate/term refinance involves replacing your current mortgage
@@ -257,7 +253,7 @@ export default function Services() {
             </p>
           </article>
 
-          <article className="serviceCard-3" role="listitem">
+          <article className="serviceCard-3">
             <h3>Why Consider a Cash-Out Refinance or Home Equity Loan</h3>
             <p>
               A cash-out refinance allows you to access your home&apos;s equity

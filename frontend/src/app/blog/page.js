@@ -41,12 +41,11 @@ export default async function BlogPage() {
       </section>
       <section 
         className="blog-container" 
-        role="region" 
         aria-labelledby="blog-posts-title"
       >
-        <div className="blog-grid" role="list">
+        <div className="blog-grid">
           {posts.map((post) => (
-            <article key={post.slug.current} className="blog-card" role="listitem">
+            <article key={post.slug.current} className="blog-card">
               <Link
                 href={`/blog/${post.slug.current}`}
                 className="blog-card-link"
@@ -64,7 +63,7 @@ export default async function BlogPage() {
                   )}
                 </div>
                 <div className="blog-content">
-                  <h3 className="post-title">{post.title}</h3>
+                  <h2 className="post-title">{post.title}</h2>
                   <hr className="post-divider" aria-hidden="true" />
                   <p className="post-excerpt">{post.excerpt}</p>
                   <time 

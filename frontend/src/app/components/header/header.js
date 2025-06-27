@@ -88,7 +88,7 @@ export default function Header() {
                 Contact
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" id="apply-now-button">
               <a
                 href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
                 className="nav-item-button"

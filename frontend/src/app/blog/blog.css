@@ -171,15 +171,6 @@
   text-decoration: none;
 }
 
-.post-date {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #fff;
-  font-size: 0.98rem;
-  margin-top: auto;
-  text-align: right;
-  text-decoration: none;
-}
-
 .blog-card-link,
 .blog-card-link:visited,
 .blog-card-link:active {
@@ -213,15 +204,11 @@
 
 .post-header .post-description {
   font-size: 1.05rem;
-  color: #666;
+  color: var(--primary);
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
-.post-header .post-date {
-  color: #888;
-  font-size: 1rem;
-}
 
 .post-divider {
   border: none !important;

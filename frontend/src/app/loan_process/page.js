@@ -23,7 +23,6 @@ export default function LoanProcess() {
       {/* Loan Process Steps */}
       <header
         className="stagesCard"
-        role="region"
         aria-labelledby="loan-process-steps-title"
         style={{
           textAlign: "left",
@@ -44,8 +43,8 @@ export default function LoanProcess() {
         </p>
       </header>
 
-      <section className="stagesGrid" role="region" aria-labelledby="loan-stages-title">
-        <article className="stagesCard" role="listitem">
+      <section className="stagesGrid" aria-labelledby="loan-stages-title">
+        <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 1">1</div>
           <div className="stageContent">
             <h2>Pre-Approval</h2>
@@ -62,7 +61,7 @@ export default function LoanProcess() {
             </p>
           </div>
         </article>
-        <article className="stagesCard" role="listitem">
+        <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 2">2</div>
           <div className="stageContent">
             <h2>Find a Home</h2>
@@ -78,7 +77,7 @@ export default function LoanProcess() {
             </p>
           </div>
         </article>
-        <article className="stagesCard" role="listitem">
+        <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 3">3</div>
           <div className="stageContent">
             <h2>Underwriting</h2>
@@ -95,7 +94,7 @@ export default function LoanProcess() {
             </p>
           </div>
         </article>
-        <article className="stagesCard" role="listitem">
+        <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 4">4</div>
           <div className="stageContent">
             <h2>Loan Approval</h2>
@@ -112,7 +111,7 @@ export default function LoanProcess() {
             </p>
           </div>
         </article>
-        <article className="stagesCard" role="listitem">
+        <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 5">5</div>
           <div className="stageContent">
             <h2>Closing</h2>

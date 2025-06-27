@@ -5,7 +5,7 @@ import "./about.css";
 export default function About() {
   return (
     <main>
-      <header className="section about-section" role="region" aria-labelledby="about-title">
+      <header className="section about-section" aria-labelledby="about-title">
         <h1>
           About S2 Mortgage
           <br />
@@ -38,7 +38,7 @@ export default function About() {
         </p>
       </header>
 
-      <section className="section team-section" role="region" aria-labelledby="team-title">
+      <section className="section team-section" aria-labelledby="team-title">
         <h2>Meet Our Team</h2>
         <div className="cards" aria-label="Team member list">
           <article className="bio-card">

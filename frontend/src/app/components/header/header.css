@@ -127,7 +127,7 @@
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: -1.6rem;
+    margin-top: -3.6rem;
   }
 
   .logo {
@@ -150,6 +150,10 @@
 
   .nav-link::after {
     display: none;
+  }
+
+  #apply-now-button {
+    margin-top: 1.9rem;
   }
 }
 
@@ -179,6 +183,9 @@
     height: 2rem;
     margin-right: 1.5rem;
     margin-top: -4rem;
+  }
+  #apply-now-button {
+    margin-top: 1.9rem;
   }
 }
 
