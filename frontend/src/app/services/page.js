@@ -26,7 +26,7 @@ export default function Services() {
       </section>
 
       {/* Section 1: Header */}
-      <section 
+      <header 
         className="servicesHeaderSection" 
         role="region" 
         aria-labelledby="services-header-title"
@@ -41,7 +41,7 @@ export default function Services() {
           loan processing, our experienced team is here to provide personalized
           solutions and exceptional support throughout every process.
         </p>
-      </section>
+      </header>
 
       {/* Section 2: What We Offer */}
       <section 

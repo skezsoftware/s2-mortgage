@@ -10,7 +10,20 @@
   justify-content: center;
   overflow: hidden;
 }
-.heroImage {
+.heroOverlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(28, 37, 65, 0.55) 0%,
+    rgba(75, 140, 255, 0.18) 100%
+  );
+  z-index: 2;
+}
+.heroImage-2 {
   object-fit: cover;
   z-index: 1;
   width: 100vw;
@@ -51,7 +64,7 @@
 }
 
 /** GRID & CARDS **/
-.servicesGrid {
+.servicesGrid-loan {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
@@ -143,7 +156,7 @@
   box-shadow: none;
 }
 
-.serviceCard {
+.serviceCard-loan {
   background: var(--primary);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(28,37,65,0.10);
@@ -162,7 +175,7 @@
   margin: 0 auto;
 }
 
-.serviceCard h1, .serviceCard h2, .serviceCard h3 {
+/* .serviceCard h1, .serviceCard h2, .serviceCard h3 {
   font-weight: 700;
   margin-bottom: 1.1rem;
 }
@@ -182,7 +195,7 @@
 .serviceCard h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
+} */
 .serviceCard p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.08rem;
@@ -258,11 +271,11 @@
     font-size: 0.98rem;
     margin-bottom: 1.5rem;
   }
-  .stagesCard h1 {
+  .stagesCard h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
-  .stagesCard h2 {
+  .stagesCard h3 {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;

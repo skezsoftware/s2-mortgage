@@ -6,13 +6,13 @@ export default function LoanProcess() {
   return (
     <>
       {/* Hero Section */}
-      <section className="heroSection">
-        <div className="heroOverlay"></div>
+      <section className="heroSection" role="banner" aria-label="Loan process hero section">
+        <div className="heroOverlay-2" aria-hidden="true"></div>
         <Image
           src="/1.png"
           alt="Single home"
           fill
-          className="heroImage"
+          className="heroImage-2"
           priority
         />
         <div className="heroContent">
@@ -21,8 +21,10 @@ export default function LoanProcess() {
       </section>
 
       {/* Loan Process Steps */}
-      <div
+      <header
         className="stagesCard"
+        role="region"
+        aria-labelledby="loan-process-steps-title"
         style={{
           textAlign: "left",
           margin: "0 auto",
@@ -31,8 +33,8 @@ export default function LoanProcess() {
           marginTop: "2.5rem",
         }}
       >
-        <h1>The Stages of a Home Loan</h1>
-        <h2>For Home Buyers</h2>
+        <h2 id="loan-process-steps-title">The Stages of a Home Loan</h2>
+        <h3>For Home Buyers</h3>
         <p>
           Navigating the home loan process can seem daunting, but understanding
           each stage can make it much smoother. At S2 Mortgage, we&apos;re here
@@ -40,11 +42,11 @@ export default function LoanProcess() {
           need to secure your dream home. Here&apos;s a breakdown of the key
           stages in the home loan process:
         </p>
-      </div>
+      </header>
 
-      <div className="stagesGrid">
-        <div className="stagesCard">
-          <div className="stageNumber">1</div>
+      <section className="stagesGrid" role="region" aria-labelledby="loan-stages-title">
+        <article className="stagesCard" role="listitem">
+          <div className="stageNumber" aria-label="Stage 1">1</div>
           <div className="stageContent">
             <h2>Pre-Approval</h2>
             <h3>WHAT IT IS:</h3>
@@ -59,9 +61,9 @@ export default function LoanProcess() {
               offer on a home, helping to prevent any surprises later on.
             </p>
           </div>
-        </div>
-        <div className="stagesCard">
-          <div className="stageNumber">2</div>
+        </article>
+        <article className="stagesCard" role="listitem">
+          <div className="stageNumber" aria-label="Stage 2">2</div>
           <div className="stageContent">
             <h2>Find a Home</h2>
             <h3>WHAT IT IS:</h3>
@@ -75,9 +77,9 @@ export default function LoanProcess() {
               and helps us tailor your loan options to match your goals.
             </p>
           </div>
-        </div>
-        <div className="stagesCard">
-          <div className="stageNumber">3</div>
+        </article>
+        <article className="stagesCard" role="listitem">
+          <div className="stageNumber" aria-label="Stage 3">3</div>
           <div className="stageContent">
             <h2>Underwriting</h2>
             <h3>WHAT IT IS:</h3>
@@ -92,9 +94,9 @@ export default function LoanProcess() {
               the lending criteria.
             </p>
           </div>
-        </div>
-        <div className="stagesCard">
-          <div className="stageNumber">4</div>
+        </article>
+        <article className="stagesCard" role="listitem">
+          <div className="stageNumber" aria-label="Stage 4">4</div>
           <div className="stageContent">
             <h2>Loan Approval</h2>
             <h3>WHAT IT IS:</h3>
@@ -109,9 +111,9 @@ export default function LoanProcess() {
               purchase of your home, pending any final conditions.
             </p>
           </div>
-        </div>
-        <div className="stagesCard">
-          <div className="stageNumber">5</div>
+        </article>
+        <article className="stagesCard" role="listitem">
+          <div className="stageNumber" aria-label="Stage 5">5</div>
           <div className="stageContent">
             <h2>Closing</h2>
             <h3>WHAT IT IS:</h3>
@@ -126,12 +128,12 @@ export default function LoanProcess() {
               you&apos;ve put in.
             </p>
           </div>
-        </div>
+        </article>
         <div className="stagesCard emptyCard"></div>
-      </div>
+      </section>
 
-      <div className="servicesGrid">
-        <div className="serviceCard">
+      <section className="servicesGrid-loan">
+        <article className="serviceCard-loan">
           <p>
             If you have any questions about these stages or need assistance with
             your home loan, our team at S2 Mortgage is here to help.
@@ -146,8 +148,8 @@ export default function LoanProcess() {
           >
             Get Started Now
           </a>
-        </div>
-      </div>
+        </article>
+      </section>
     </>
   );
 }

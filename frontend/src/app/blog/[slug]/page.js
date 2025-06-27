@@ -6,7 +6,8 @@ import "../blog.css";
 export const dynamic = "force-static";
 
 export async function generateMetadata({ params }) {
-  const post = await getBlogPost(params.slug);
+  const { slug } = await params;
+  const post = await getBlogPost(slug);
   return {
     title: post.title,
     description: post.excerpt,
@@ -14,39 +15,52 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPost({ params }) {
-  const post = await getBlogPost(params.slug);
+  const { slug } = await params;
+  const post = await getBlogPost(slug);
 
   return (
-    <>
-      <article className="blog-post">
-        <div className="post-header">
-          <h1 className="post-title">{post.title}</h1>
+    <main>
+      <article 
+        className="blog-post" 
+        role="article"
+        aria-labelledby="blog-post-title"
+      >
+        <header className="post-header">
+          <h1 id="blog-post-title" className="post-title">{post.title}</h1>
           <p className="post-description">{post.excerpt}</p>
-          <time className="post-date">
+          <time 
+            className="post-date"
+            dateTime={post.publishedAt}
+            aria-label={`Published on ${new Date(post.publishedAt).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}`}
+          >
             {new Date(post.publishedAt).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
               day: "numeric",
             })}
           </time>
-        </div>
+        </header>
 
         {post.thumbnail && (
-          <div className="post-image">
+          <figure className="post-image">
             <Image
               src={post.thumbnail}
-              alt={post.title}
+              alt={`Featured image for article: ${post.title}`}
               width={800}
               height={400}
               className="post-thumbnail"
             />
-          </div>
+          </figure>
         )}
 
-        <div className="post-content">
+        <div className="post-content" role="main">
           <PortableText value={post.content} />
         </div>
       </article>
-    </>
+    </main>
   );
 }

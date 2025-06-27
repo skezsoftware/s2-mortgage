@@ -31,13 +31,13 @@ export default async function BlogPage() {
             <h1 className="blog-hero-content-h1">Blog</h1>
           </div>
         </div>
-        <div className="blog-info-section">
+        <header className="blog-info-section">
           <p>
             Welcome to our blog! Here you&apos;ll find articles about the latest
             trends in the mortgage industry, tips for first-time homebuyers, and
             more.
           </p>
-        </div>
+        </header>
       </section>
       <section 
         className="blog-container" 

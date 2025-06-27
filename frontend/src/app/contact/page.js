@@ -45,51 +45,62 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="contact-hero-section">
-        <h1>We’d Love to Hear From You!</h1>
+    <main>
+      <header className="contact-hero-section" role="region" aria-labelledby="contact-hero-title">
+        <h1 id="contact-hero-title">We&apos;d Love to Hear From You!</h1>
         <p>
-          Whether you’re interested in working together, have questions about
-          our services, or just want to say hello, we’re here for you. Fill out
+          Whether you&apos;re interested in working together, have questions about
+          our services, or just want to say hello, we&apos;re here for you. Fill out
           the form below and our team will get back to you as soon as possible.
-          Let’s connect and see how we can help you achieve your goals!
+          Let&apos;s connect and see how we can help you achieve your goals!
         </p>
-      </div>
-      <section>
+      </header>
+      <section className="contact-form-section" role="region" aria-labelledby="contact-form-title">
         <form
           className="contact-form"
           onSubmit={handleSubmit}
           autoComplete="off"
+          role="form"
+          aria-labelledby="contact-form-title"
         >
+          <label htmlFor="contact-name" className="sr-only">Name</label>
           <input
             className="contact-input"
             type="text"
             name="name"
+            id="contact-name"
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
+          <label htmlFor="contact-email" className="sr-only">Email</label>
           <input
             className="contact-input"
             type="email"
             name="email"
+            id="contact-email"
             placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
+          <label htmlFor="contact-phone" className="sr-only">Phone</label>
           <input
             className="contact-input"
             type="tel"
             name="phone"
+            id="contact-phone"
             placeholder="Your Phone Number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
           />
+          <label htmlFor="contact-message" className="sr-only">Message</label>
           <textarea
             className="contact-textarea"
             name="message"
+            id="contact-message"
             placeholder="Your Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -111,12 +122,15 @@ export default function ContactPage() {
               style={{
                 color: status.type === "success" ? "var(--primary)" : "#d32f2f",
               }}
+              aria-live="polite"
+              role="status"
             >
               {status.message}
             </div>
           )}
         </form>
       </section>
+      </main>
     </>
   );
 }
