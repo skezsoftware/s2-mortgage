@@ -90,75 +90,79 @@ const whyData = [
 export default function Home() {
   return (
     <>
-      {/* Hero Section with Sunset Background */}
-      <div className={styles.homepage}>
-        <div className={styles.heroOverlay}></div>
-      </div>
+      <main>
+        {/* Hero Section with Sunset Background */}
+        <header className={styles.homepage}>
+          <div className={styles.heroOverlay}></div>
+        </header>
 
-      <div className={styles.homeHeroContent}>
-        <h1>Welcome to S2 Mortgage</h1>
-        <p>
-          At S2 Mortgage, we take pride in delivering exceptional service and
-          are confident that we have the perfect solution to your unique home
-          loan needs.
-        </p>
-        <a
-          href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
-          className={styles.heroButton}
-        >
-          Get Started Now
-        </a>
-      </div>
-
-      {/* What We Offer Section */}
-      <div className={styles.whatWeOfferTitle}>
-        <h2>What We Offer</h2>
-      </div>
-      <section className="section">
-        <div className={styles.cards + " " + styles.whatWeOfferCards}>
-          {cardData.map((card, idx) => (
-            <div
-              className={styles.card + " " + styles.cardHoverOverlay}
-              key={card.title}
-              style={{ backgroundImage: `url(${card.backgroundImage})` }}
-            >
-              <div className={styles.cardText}>
-                <h3>{card.title}</h3>
-              </div>
-              <div className={styles.cardDescription}>{card.description}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className={styles.section + " " + styles.whyChooseUsSection}>
-        <h2>Why Choose Us</h2>
-        <div className={styles.cards + " " + styles.whyChooseUsCards}>
-          {whyData.map((card, idx) => (
-            <div key={card.title}>
-              {card.icon}
-              <h3>{card.title}</h3>
-              <p className={styles.whyDescription}>{card.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Explore Services Button Section */}
-      <div className={styles.exploreServicesSection}>
-        <div className={styles.exploreServicesCard}>
-          <h2 className={styles.exploreServicesTitle}>Explore Our Services</h2>
-          <p className={styles.exploreServicesSubtitle}>
-            Start your journey with S2 Mortgage, and let us help you achieve
-            your home financing goals. Discover our full range of services and
-            find the one that aligns with your needs.
+        <div className={styles.homeHeroContent}>
+          <h1>Welcome to S2 Mortgage</h1>
+          <p>
+            At S2 Mortgage, we take pride in delivering exceptional service and
+            are confident that we have the perfect solution to your unique home
+            loan needs.
           </p>
-          <a href="/services" className={styles.exploreServicesButton}>
-            Explore Our Services
+          <a
+            href="https://plus.preapp1003.com/Nicole-Thompson-Stockmoe"
+            className={styles.heroButton}
+          >
+            Get Started Now
           </a>
         </div>
-      </div>
+
+        {/* What We Offer Section */}
+        <div className={styles.whatWeOfferTitle}>
+          <h2>What We Offer</h2>
+        </div>
+        <section className="section">
+          <div className={styles.cards + " " + styles.whatWeOfferCards}>
+            {cardData.map((card, idx) => (
+              <div
+                className={styles.card + " " + styles.cardHoverOverlay}
+                key={card.title}
+                style={{ backgroundImage: `url(${card.backgroundImage})` }}
+              >
+                <div className={styles.cardText}>
+                  <h3>{card.title}</h3>
+                </div>
+                <div className={styles.cardDescription}>{card.description}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className={styles.section + " " + styles.whyChooseUsSection}>
+          <h2>Why Choose Us</h2>
+          <div className={styles.cards + " " + styles.whyChooseUsCards}>
+            {whyData.map((card, idx) => (
+              <div key={card.title}>
+                {card.icon}
+                <h3>{card.title}</h3>
+                <p className={styles.whyDescription}>{card.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Explore Services Button Section */}
+        <section className={styles.exploreServicesSection}>
+          <div className={styles.exploreServicesCard}>
+            <h2 className={styles.exploreServicesTitle}>
+              Explore Our Services
+            </h2>
+            <p className={styles.exploreServicesSubtitle}>
+              Start your journey with S2 Mortgage, and let us help you achieve
+              your home financing goals. Discover our full range of services and
+              find the one that aligns with your needs.
+            </p>
+            <a href="/services" className={styles.exploreServicesButton}>
+              Explore Our Services
+            </a>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
