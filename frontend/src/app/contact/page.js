@@ -56,6 +56,7 @@ export default function ContactPage() {
         </p>
       </header>
       <section className="contact-form-section" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title" style={{position: 'absolute', left: '-9999px'}}>Contact Form</h2>
         <form
           className="contact-form"
           onSubmit={handleSubmit}
