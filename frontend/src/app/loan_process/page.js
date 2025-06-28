@@ -44,6 +44,7 @@ export default function LoanProcess() {
       </header>
 
       <section className="stagesGrid" aria-labelledby="loan-stages-title">
+        <h2 id="loan-stages-title" style={{position: 'absolute', left: '-9999px'}}>Loan Stages</h2>
         <article className="stagesCard">
           <div className="stageNumber" aria-label="Stage 1">1</div>
           <div className="stageContent">

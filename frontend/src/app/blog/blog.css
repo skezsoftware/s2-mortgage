@@ -179,6 +179,14 @@
   text-decoration: none;
 }
 
+/* .blog-card-link:focus {
+  outline: 3px solid red;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(51, 102, 255, 0.8);
+  border-radius: 18px;
+  background: rgba(51, 102, 255, 0.8);
+  z-index: 2;
+} */
 
 .blog-post {
   max-width: 900px;
