@@ -40,8 +40,7 @@ export default async function BlogPage() {
         </header>
       </section>
       <section 
-        className="blog-container" 
-        aria-labelledby="blog-posts-title"
+        className="blog-container"
       >
         <div className="blog-grid">
           {posts.map((post) => (
