@@ -124,7 +124,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
   z-index: 1;
   border-radius: inherit;
 }
@@ -152,6 +152,11 @@
   width: 100%;
   font-size: 2rem;
   z-index: 2;
+  background: var(--primary);
+  border-radius: 18px;
+  padding: 0.5rem 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  color: #fff;
 }
 
 .cardDescription {
