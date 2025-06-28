@@ -122,6 +122,8 @@ export default function Home() {
                 className={styles.card + " " + styles.cardHoverOverlay}
                 key={card.title}
                 style={{ backgroundImage: `url(${card.backgroundImage})` }}
+                tabIndex="0"
+                aria-label={card.title + ': ' + card.description}
               >
                 <div className={styles.cardText}>
                   <h3>{card.title}</h3>
