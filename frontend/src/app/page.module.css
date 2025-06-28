@@ -165,7 +165,7 @@
   width: 100%;
   height: 100%;
   background: var(--primary);
-  color: #fff !important;
+  color: #fff;
   font-size: 1.08rem;
   font-weight: 500;
   opacity: 0;
@@ -180,15 +180,26 @@
   text-align: center;
 }
 
-.cardHoverOverlay:hover .cardDescription {
+.cardHoverOverlay:hover .cardDescription,
+.cardHoverOverlay:focus .cardDescription,
+.cardHoverOverlay:focus-within .cardDescription {
   opacity: 1;
   pointer-events: auto;
 }
 
 .cardHoverOverlay:hover .cardIcon,
-.cardHoverOverlay:hover h3 {
+.cardHoverOverlay:hover h3,
+.cardHoverOverlay:focus .cardIcon,
+.cardHoverOverlay:focus h3,
+.cardHoverOverlay:focus-within .cardIcon,
+.cardHoverOverlay:focus-within h3 {
   opacity: 0.15;
   transition: opacity 0.2s;
+}
+
+.cardHoverOverlay:focus {
+  outline: 3px solid var(--accent, #3366ff);
+  outline-offset: 2px;
 }
 
 .whyDescription {

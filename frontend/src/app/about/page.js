@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main>
       <header className="section about-section" aria-labelledby="about-title">
-        <h1>
+        <h1 id="about-title">
           About S2 Mortgage
           <br />
           And Our Commitment To Excellence
@@ -39,7 +39,7 @@ export default function About() {
       </header>
 
       <section className="section team-section" aria-labelledby="team-title">
-        <h2>Meet Our Team</h2>
+        <h2 id="team-title">Meet Our Team</h2>
         <div className="cards" aria-label="Team member list">
           <article className="bio-card">
             <Image
