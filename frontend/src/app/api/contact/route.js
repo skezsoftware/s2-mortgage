@@ -11,6 +11,7 @@ export async function POST(req) {
       from: 'no-reply@s2mortgage.com',
       to: 'nicole@s2mortgage.com', // replace this with actual email
       subject: 'New Contact Form Submission',
+      reply_to: 'nicole@s2mortgage.com',
       html: `
         <h2>New Contact Form Submission!</h2>
         <p><strong>Name:</strong> ${name}</p>
