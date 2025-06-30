@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 's2-mortgage-cms',
 
-  projectId: 'ffh9628x',
+  projectId: 'puoa65jp',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
