@@ -9,10 +9,10 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'skezsoftware@gmail.com', // replace this with actual email
+      to: 'nicole@s2mortgage.com', // replace this with actual email
       subject: 'New Contact Form Submission',
       html: `
-        <h2>Contact Form Submission</h2>
+        <h2>New Contact Form Submission!</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
@@ -20,7 +20,7 @@ export async function POST(req) {
       `,
     });
 
-    return NextResponse.json({ success: true, message: "Message sent successfully!" });
+    return NextResponse.json({ success: true, message: "Message sent successfully! We will get back to you as soon as possible." });
   } catch (error) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
