@@ -9,7 +9,7 @@ export async function POST(req) {
 
     const data = await resend.emails.send({
       from: 'contact@s2mortgage.com',
-      to: 'dwvasquez97@gmail.com', // replace this with actual email
+      to: 'nicole@s2mortgage.com', // replace this with actual email
       subject: 'New Contact Form Submission',
       reply_to: 'contact@s2mortgage.com',
       html: `
