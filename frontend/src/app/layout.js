@@ -3,6 +3,7 @@ import Footer from "./components/footer/footer";
 import UpButton from "./components/up_button/upButton";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "S2 Mortgage",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Analytics />
         <UpButton />
         <Footer />
       </body>
