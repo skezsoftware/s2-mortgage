@@ -16,9 +16,14 @@ export default function Footer() {
         <p>
           <FaEnvelope /> nicole@s2mortgage.com
         </p>
-        <p>Licensed in California, NMLS #2583860</p>
+        <p>Licensed in California, DRE &#35;01872714</p>
+        <p>NMLS &#35;2583860</p>
         <p>
-          <a href="/privacy" className="privacy-policy-link" style={{textDecoration: "none", color: "#fff"}}>
+          <a
+            href="/privacy"
+            className="privacy-policy-link"
+            style={{ textDecoration: "none", color: "#fff" }}
+          >
             Privacy Policy
           </a>
         </p>
