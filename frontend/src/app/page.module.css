@@ -25,18 +25,20 @@
 }
 
 .homeHeroContent {
-  position: relative;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   text-align: center;
   max-width: 700px;
-  margin: 0 auto;
   padding: 2.5rem 2rem 2rem 2rem;
   background: rgba(255,255,255,0.92);
   border-radius: 18px;
   color: var(--primary);
   box-shadow: 0 8px 32px rgba(28,37,65,0.10);
-  margin-top: -15rem;
 }
+
 
 .homeHeroContent h1 {
   font-size: 2.6rem;
@@ -86,7 +88,7 @@
 .whatWeOfferTitle h2 {
   font-size: 2rem;
   font-weight: 500;
-  margin-top: 12px;
+  margin-top: 40px;
   letter-spacing: 0.5px;
   text-align: center;
 }
@@ -304,7 +306,10 @@
 
 @media screen and (max-width: 700px) {
   .homeHeroContent {
+    max-width: 90%;
+    width: 90%;
     padding: 1.2rem 0.7rem;
+    top: 12%;
     /* margin-top: 22em; */
   }
   .section {
